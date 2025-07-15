@@ -1901,3 +1901,100 @@ position: relative;
 }
 
 
+/* ************Fotter start********* */
+.footerwholedbody{
+  position: relative;
+  width: 100%;
+  background-color: #0e0d26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 2px solid rgb(61, 10, 58);
+}
+.leftfooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 40%;
+}
+.rightfooter{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footerleftbottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #b3bbc3;
+  font-size: 1.2rem;
+}
+
+.footerleftbottom h3{
+  font-size: 1.8rem;
+}
+
+.footerleftbottom ul li{
+  list-style: none;
+}
+.footerleftbottom ul li:hover{
+ color: #96539b;
+}
+
+.footerleftbottom ul{
+  padding-left: 0;
+  line-height: 2;
+}
+
+.footersymboleImg{
+  width: 60%;
+  margin-left: 3rem;
+}
+.footerleftcynuxEraImg{
+  width: 40%;
+}
+
+.footercopyright{
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+  color: #b3bbc3;
+  font-size: 1rem;
+  
+}
+.footerbacktotop{
+  position: absolute;
+  bottom: 5%;
+  right: 15%;
+  color: #b3bbc3;
+  font-size: 1rem;
+}
+.footeraddress{
+  font-size: 1.2rem;
+  color: #b3bbc3;
+}
+
+.footerLink{
+  text-decoration: none;
+  color: #b3bbc3;
+  cursor: pointer;
+}
+/* ************Fotter end********* */
+

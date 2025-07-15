@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import {FaBars} from "react-icons/fa";
 import ProjectsHome from './ProjectHomePage.jsx';
-
+import Footer from './footer.jsx';
 
 function HomePage() {
 
@@ -261,8 +261,8 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
               <ProjectsHome/>
      </div>
               
-      <div className='footer'>
-
+      <div className='footerhomediv'>
+            <Footer/>
       </div>
 
 
