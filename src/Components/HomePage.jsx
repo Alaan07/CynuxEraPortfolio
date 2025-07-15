@@ -79,7 +79,11 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                   onClick={toggleMenu}>X</span>
 
                   <div className='menudivleft'>
-                    <h1> bla bla bla bla bla bla bla</h1>
+                  <div className="testtt">
+                    <img src="/img/newEXP/withoutlock.png" alt="" className='withoutlockimg'/>
+                    <img src="/img/newEXP/onlylock.png" alt=""  className='onlylockimg'/>
+                  </div>
+                    
                   </div>
                   <div className='menudivright'>
 
@@ -120,16 +124,17 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                     <div> support@cynuxera.in <br /> <br /> +91 90652 54600</div>
                     
                     </div>
+
+                    <div className="menuby">
+                      <h3 className='menubyh3'> By <Link to={'https://www.cynuxera.in/'} className='menubylink' target='_blank'>CYNUXERA</Link></h3>
+                    </div>
                     
 
-                  </div>
-
-                  
+                  </div>           
+              </div>
               </div>
 
-
-
-              </div>
+      
 
       
         <div className='homemainbodyleft'>

@@ -75,8 +75,8 @@ function Projects() {
   };
 
   return (
-    <div className="everything">
-      <div className="promainBody">
+    <div className="everything ">
+      <div className={`promainBody ${activeCard ? 'blurred' : ''}`}>
         <div className="proHomeheadsection">
           <div className='prohomepageLeft'>
             <h1 className="projecth1">Projects</h1>
@@ -132,6 +132,25 @@ function Projects() {
           </div>
         </div>
       </div>
+
+
+
+      {activeCard && (
+      <div className="modalHome">
+        <div className="modal-content">
+          <div className="modal-video">
+            <video src={activeCard.video} controls autoPlay />
+          </div>
+          <div className="modal-desc">
+            <h3>{activeCard.title}</h3>
+            <p className="subheading">{activeCard.subtitle}</p>
+            <p>{activeCard.desc}</p>
+            <button className="close-btn" onClick={() => setActiveCard(null)}>Close</button>
+          </div>
+        </div>
+      </div>
+    )}
+
     </div>
   );
 }
