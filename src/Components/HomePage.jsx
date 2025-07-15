@@ -14,7 +14,19 @@ function HomePage() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [scrolled, setScrolled] = useState(false);
+
       useEffect(() => {
+
+              const handleScroll = () => {
+            if (window.scrollY > 0) {
+              setScrolled(true);
+            } else {
+              setScrolled(false);
+            }
+          };
+
+             window.addEventListener("scroll", handleScroll);
 
           const interval = setInterval(() => {
             setShowDev(prev => !prev);
@@ -57,6 +69,7 @@ function HomePage() {
               if (container) {
                 container.innerHTML = ""; // remove falling-code spans
               }
+              window.removeEventListener("scroll", handleScroll);
             };
           }, []);
 
@@ -69,7 +82,22 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     
     <div className="wholeContainer">
       <div className="homemainbody" id='HomeTag'>
-         <span className='menubar' onClick={toggleMenu}><FaBars/></span>
+
+
+          <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
+            <ul className='navbar_logo'>
+              <Link to={'/'}> <img className='navbarLogoImage' src="/img/New_loader.png" alt="Cynux Era Logo" /></Link>
+            </ul>
+            <ul className='nav_right'>
+              <Link to={'https://www.cynuxera.in/'} target='_blank'><li className='nav_item'><FaGlobe className='Faicon'/></li></Link>
+              <Link to={'https://www.instagram.com/cynux_era/'} target='_blank'><li className='nav_item'><FaInstagram className='Faicon'/></li></Link>
+              <Link to={'https://www.linkedin.com/company/cynux-era'} target='_blank'><li className='nav_item'><FaLinkedin className='Faicon'/></li></Link>
+            </ul>
+            <ul>
+              <span className='menubar' onClick={toggleMenu}><FaBars/></span>
+            </ul>
+          </div>
+         
 
             <div className={`side-menu ${isMenuOpen ? 'open' : ''}`}>
                 {/* Close Button */}
@@ -136,7 +164,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
       
 
-      
+
         <div className='homemainbodyleft'>
 
             <div className="background-animations">
@@ -164,17 +192,9 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
       
 
-          <div className="navbar">
-            <ul className='navbar_logo'>
-              <Link to={'/'}> <img className='navbarLogoImage' src="/img/New_loader.png" alt="Cynux Era Logo" /></Link>
-            </ul>
-            <ul className='nav_right'>
-              <Link to={'https://www.cynuxera.in/'} target='_blank'><li className='nav_item'><FaGlobe className='Faicon'/></li></Link>
-              <Link to={'https://www.instagram.com/cynux_era/'} target='_blank'><li className='nav_item'><FaInstagram className='Faicon'/></li></Link>
-              <Link to={'https://www.linkedin.com/company/cynux-era'} target='_blank'><li className='nav_item'><FaLinkedin className='Faicon'/></li></Link>
-            </ul>
+          
 
-          </div>
+
 
           <div className="homebody">
             <div className="homecontainer">
@@ -240,6 +260,14 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
      <div className="projectMainBody">
               <ProjectsHome/>
      </div>
+              
+      <div className='footer'>
+
+      </div>
+
+
+
+
     </div>
     </div>
   )

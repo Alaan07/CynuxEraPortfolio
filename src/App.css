@@ -32,14 +32,10 @@ body {
 }
 
 .menubar{
-  position: absolute;
-  top: 6%;
-  right : 5%;
   color: #b3bbc3;
   cursor: pointer;
   font-size: 2.2rem;
-  z-index: 10;
-  padding: 10px;
+  z-index: 50;
 }
 
 .menubar:hover {
@@ -64,7 +60,7 @@ body {
   color: #fff;
   transform: translateX(100%);
   transition: transform 0.4s ease-in-out;
-  z-index: 20;
+  z-index: 50;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -661,13 +657,35 @@ body {
 
   
 .navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
   display:flex;
   justify-content: space-between;
   align-items: center;
   max-height: 20%;
-  width: 100%;
-  
+  width: 100vw;
+  padding: 0 50px;
+  box-sizing: border-box;
+  z-index: 50;
+
+
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+
+  background-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+
+
+
 .navbar_logo{
   padding : 0;
 }
@@ -874,6 +892,9 @@ position: relative;
   }
 }
 
+.promainBody.blurrepropage {
+  filter: blur(4px);
+ }
 
 /* ************************screesize less 900px */
 
@@ -1246,16 +1267,112 @@ position: relative;
 /* *****************************************projectHomepage end*/
 
 /* *****************************************projectpage start*/
+.projectpagevideodiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.providwholecontainer {
+  background: transparent;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  max-width: 95%;
+  max-height: 95%;
+  overflow: visible;
+  gap: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.propageviddiv {
+  flex: 1;
+  min-width: 300px;
+  max-width: 65%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* ✅ */
+  box-shadow: 0 4px 20px 8px rgb(161, 107, 172), 0 -4px 20px 8px rgb(161, 107, 172); /* pinkish blue */
+}
+
+.propageviddiv video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px; /* optional if video should match */
+}
+
+.propagedescdiv {
+  flex: 0 0 30%;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  height: auto;
+  align-self: flex-start;
+  box-sizing: border-box;
+  border-radius: 10px; /* ✅ */
+}
+
+.propagedescdiv h3 {
+  margin-top: 0;
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .providwholecontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .propageviddiv,
+  .propagedescdiv {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .propagedescdiv {
+    margin-top: 20px;
+  }
+}
+
+
+
+
 
 .promainBody {
   width: 100%;
   max-width: 1200px;
+  
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 4rem;
+  padding-top: 9rem;
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGlobe } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -10,9 +10,27 @@ import {FaBars} from "react-icons/fa";
 function Projects() {
   const [activeCard, setActiveCard] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  useEffect(() => {
+  
+                const handleScroll = () => {
+              if (window.scrollY > 0) {
+                setScrolled(true);
+              } else {
+                setScrolled(false);
+              }
+            };
+  
+               window.addEventListener("scroll", handleScroll);
+
+               return () => {
+              window.removeEventListener("scroll", handleScroll);
+            };
+          }, []);
 
 
   const cards = [
@@ -76,91 +94,92 @@ function Projects() {
 
  return (
   <>
-    <div className={`everything ${activeCard ? 'blurred' : ''}`}>
-       <div className="navbar" style={{ width: '70%' }}>
-          <ul className='navbar_logo'>
-            <Link to={'/'}> <img className='navbarLogoImage projectpagemenyimg'  src="/img/New_loader.png" alt="Cynux Era Logo" /></Link>
-                  </ul>
-            <ul className='nav_right'>
-              <Link to={'/projects'}><li className='nav_item'><FaGlobe className='Faicon'/></li></Link>
-              <Link to={'/about'}><li className='nav_item'><FaInstagram className='Faicon'/></li></Link>
-              <Link to={'/contact'}><li className='nav_item'><FaLinkedin className='Faicon'/></li></Link>
-            </ul>
-      
-      </div>
+    <div className="everything">
+        <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
+                   <ul className='navbar_logo'>
+                     <Link to={'/'}> <img className='navbarLogoImage' src="/img/New_loader.png" alt="Cynux Era Logo" /></Link>
+                   </ul>
+                   <ul className='nav_right'>
+                     <Link to={'https://www.cynuxera.in/'} target='_blank'><li className='nav_item'><FaGlobe className='Faicon'/></li></Link>
+                     <Link to={'https://www.instagram.com/cynux_era/'} target='_blank'><li className='nav_item'><FaInstagram className='Faicon'/></li></Link>
+                     <Link to={'https://www.linkedin.com/company/cynux-era'} target='_blank'><li className='nav_item'><FaLinkedin className='Faicon'/></li></Link>
+                   </ul>
+                   <ul>
+                     <span className='menubar' onClick={toggleMenu}><FaBars/></span>
+                   </ul>
+                 </div>
+                
+       
+                   <div className={`side-menu ${isMenuOpen ? 'open' : ''}`}>
+                       {/* Close Button */}
+       
+                       <div className='menubarwholebody' style={{ display: isMenuOpen ? 'flex' : 'none' }}>
+                       <span className="close-btn"
+                         onClick={toggleMenu}>X</span>
+       
+                         <div className='menudivleft'>
+                         <div className="testtt">
+                           <img src="/img/newEXP/withoutlock.png" alt="" className='withoutlockimg'/>
+                           <img src="/img/newEXP/onlylock.png" alt=""  className='onlylockimg'/>
+                         </div>
+                           
+                         </div>
+                         <div className='menudivright'>
+       
+                               <div className="background-animations">
+                                 <div className="circle"></div>
+                                 <div className="circle small"></div>
+                                 <div className="blob"></div>
+                                 <div className="blob large"></div>
+                                 <div className="diamond"></div>
+                                 <div className="hexagon"></div>
+                                 <div className="star"></div>
+                                 <div className="ellipse"></div>
+                                 <div className="line"></div>
+                                 <div className="triangle"></div>
+                                 <div className="cross"></div>
+                                 <div className="zigzag"></div>
+                                 <div className="vline"></div>
+                                 <div className="arc"></div>
+                               </div>
+       
+       
+       
+                           <div className='menubarlistmenu'>
+                             <ul>
+                               <Link to={'/'} onClick={toggleMenu} className='menubarlinks'><li className='menubarli'><span>Home</span></li></Link>
+                               <Link className='menubarlinks'><li className='menubarli'><span>About us</span></li></Link>
+                               <Link to={'/projects'} className='menubarlinks'><li className='menubarli'><span>Project</span></li></Link>
+                               <Link className='menubarlinks'><li className='menubarli'><span>Contact us</span></li></Link>
+                             </ul>
+                         </div>
+       
+       
+                         <div className='menubarlistadd'>
+       
+                           <div className='.fixed_width_text '>AIC DSU 3rd Floor <br /> DSU Kudlu Gate Bangalore</div>
+       
+                                 
+                           <div> support@cynuxera.in <br /> <br /> +91 90652 54600</div>
+                           
+                           </div>
+       
+                           <div className="menuby">
+                             <h3 className='menubyh3'> By <Link to={'https://www.cynuxera.in/'} className='menubylink' target='_blank'>CYNUXERA</Link></h3>
+                           </div>
+                           
+       
+                         </div>           
+                     </div>
+                     </div>
 
 
 
-         <span className='menubar' onClick={toggleMenu}><FaBars/></span>
-        
-                    <div className={`side-menu ${isMenuOpen ? 'open' : ''}`}>
-                        {/* Close Button */}
-        
-                        <div className='menubarwholebody' style={{ display: isMenuOpen ? 'flex' : 'none' }}>
-                        <span className="close-btn"
-                          onClick={toggleMenu}>X</span>
-        
-                          <div className='menudivleft'>
-                            <h1> bla bla bla bla bla bla bla</h1>
-                          </div>
-                          <div className='menudivright'>
-        
-                                <div className="background-animations">
-                                  <div className="circle"></div>
-                                  <div className="circle small"></div>
-                                  <div className="blob"></div>
-                                  <div className="blob large"></div>
-                                  <div className="diamond"></div>
-                                  <div className="hexagon"></div>
-                                  <div className="star"></div>
-                                  <div className="ellipse"></div>
-                                  <div className="line"></div>
-                                  <div className="triangle"></div>
-                                  <div className="cross"></div>
-                                  <div className="zigzag"></div>
-                                  <div className="vline"></div>
-                                  <div className="arc"></div>
-                                </div>
-        
-        
-        
-                            <div className='menubarlistmenu'>
-                              <ul>
-                                <Link to={'/'} onClick={toggleMenu} className='menubarlinks'><li className='menubarli'><span>Home</span></li></Link>
-                                <Link className='menubarlinks'><li className='menubarli'><span>About us</span></li></Link>
-                                <Link to={'/projects'} className='menubarlinks'><li className='menubarli'><span>Project</span></li></Link>
-                                <Link className='menubarlinks'><li className='menubarli'><span>Contact us</span></li></Link>
-                               </ul>
-                          </div>
-        
-        
-                          <div className='menubarlistadd'>
-        
-                            <div className='.fixed_width_text '>AIC DSU 3rd Floor <br /> DSU Kudlu Gate Bangalore</div>
-        
-                                  
-                            <div> support@cynuxera.in <br /> <br /> +91 90652 54600</div>
-                            
-                            </div>
-                            
-        
-                          </div>
-        
-                          
-                      </div>
-        
-        
-        
-                      </div>
 
 
 
 
-
-
-
-
-      <div className="promainBody">
+      <div className={`promainBody ${activeCard ? 'blurrepropage' : ''}`}>
 
          <div className="proheadsection">
           <h1 className="projecth1">Projects</h1>
@@ -195,12 +214,12 @@ function Projects() {
     </div>
 
     {activeCard && (
-      <div className="modal">
-        <div className="modal-content">
-          <div className="modal-video">
+      <div className="projectpagevideodiv">
+        <div className="providwholecontainer">
+          <div className="propageviddiv">
             <video src={activeCard.video} controls autoPlay />
           </div>
-          <div className="modal-desc">
+          <div className="propagedescdiv">
             <h3>{activeCard.title}</h3>
             <p className="subheading">{activeCard.subtitle}</p>
             <p>{activeCard.desc}</p>
