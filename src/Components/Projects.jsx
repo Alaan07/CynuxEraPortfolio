@@ -4,6 +4,7 @@ import { FaGlobe } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import {FaBars} from "react-icons/fa";
+import Footer from './footer.jsx';
 
 // ******css file error*************
 
@@ -211,6 +212,21 @@ function Projects() {
 
 
       </div>
+
+
+
+        <div className='footerhomediv'>
+            <Footer/>
+        </div>
+
+
+
+
+
+
+
+
+
     </div>
 
     {activeCard && (

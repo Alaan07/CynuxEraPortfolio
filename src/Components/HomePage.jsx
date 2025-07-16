@@ -107,12 +107,13 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                   onClick={toggleMenu}>X</span>
 
                   <div className='menudivleft'>
-                  <div className="testtt">
-                    <img src="/img/newEXP/withoutlock.png" alt="" className='withoutlockimg'/>
-                    <img src="/img/newEXP/onlylock.png" alt=""  className='onlylockimg'/>
+                    <div className="testtt">
+                      <img src="/img/newEXP/withoutlock.png" alt="" className='withoutlockimg'/>
+                      <img src="/img/newEXP/onlylock.png" alt=""  className='onlylockimg'/>
+                    </div>
                   </div>
-                    
-                  </div>
+
+
                   <div className='menudivright'>
 
                         <div className="background-animations">
@@ -131,6 +132,12 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                           <div className="vline"></div>
                           <div className="arc"></div>
                         </div>
+
+                    
+                      <div className='menucynuxlogodiv'>
+                          <img src="/img/New_logo2.png" alt="" className='menucynuxlogoimg'/>
+                          <img src="/img/cynux-era-logo.png" alt="" className='menucynuxnameimg'/>
+                      </div>
 
 
 
@@ -217,7 +224,8 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                 <div className="trustedBy">
                   <h3 className='Trustheading'>Tusted by ...</h3>
 
-                  {showDev ? (<img src="" alt="reva" />):(<img src="" alt="jain" />)}
+                 <img src="/img/newEXP/dsu.png" alt="reva"  className='dsutrustedimg'/>
+                 <img src="/img/newEXP/Reva_logo.jpeg" alt="jain" className='revatrustedimg' />
                   
                   {/* if its not good then we change to side by side  */}
 
@@ -264,7 +272,6 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
       <div className='footerhomediv'>
             <Footer/>
       </div>
-
 
 
 

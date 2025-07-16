@@ -80,6 +80,22 @@ body {
   align-items: center;
 }
 
+.menucynuxlogodiv{
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.menucynuxlogoimg{
+  width: 10rem;
+}
+.menucynuxnameimg{
+  width: 12rem;
+}
+
 .menudivleft{
   width: 40%;
   height: 100vh;
@@ -742,7 +758,6 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center; 
-  margin-bottom: 3rem;  /* can make even more hight if trusted by needs more space */
 }
 
 
@@ -754,6 +769,23 @@ body {
      color: #b3bbc3;
      font-size: 1.2rem;
      text-align: center;
+  }
+  .dsutrustedimg{
+    width: 8rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .revatrustedimg{
+    width: 8rem;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
   }
 
 
@@ -1214,6 +1246,36 @@ position: relative;
 
 
 /* ******projectHomeCardsecton start********* */
+.view-more-card {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  transition: background 0.3s;
+}
+.view-more-card:hover {
+  background-color: transparent;
+}
+.view-more-link {
+  text-decoration: none;
+  color: #b3bbc3;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.veiwmorecardcontant{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
 
 .procardsectionDiv{
   padding: 10px 20px;
@@ -1980,12 +2042,23 @@ position: relative;
   
 }
 .footerbacktotop{
+  display: flex;
+  align-items: center;
+  gap: 10px;
   position: absolute;
   bottom: 5%;
   right: 15%;
   color: #b3bbc3;
   font-size: 1rem;
+  cursor: pointer;
 }
+
+
+.footerbacktotop:hover{
+color: #96539b;
+}
+
+
 .footeraddress{
   font-size: 1.2rem;
   color: #b3bbc3;

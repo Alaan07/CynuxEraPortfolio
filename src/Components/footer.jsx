@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaArrowUp } from 'react-icons/fa'
+import { FaHome } from 'react-icons/fa'
 
 function footer() {
   return (
@@ -30,29 +30,29 @@ function footer() {
                <ul>
                 <Link className='footerLink'><li>Mission</li></Link>
                 <Link className='footerLink'><li>Team</li></Link>
-                <Link className='footerLink'><li>Certificates</li></Link>
+                <Link className='footerLink' to={'https://www.cynuxera.in/certificates'} target='_blank'><li>Certificates</li></Link>
                </ul>
             </div>
             <div className='footerSupportdiv'>
               <h3 className='footerSupportheading'> Support</h3>
                <ul>
                 <Link className='footerLink'><li>Conatct</li></Link>
-                <Link className='footerLink'><li>Mail us</li></Link>
+                <Link className='footerLink' to={'mailto:cynuxera@gmail.com'}><li>Mail us</li></Link>
                </ul>
             </div>
             <div className='footerSocialsdiv'>
               <h3 className='footerSocialsheading'> Socials</h3>
                <ul>
-                <Link className='footerLink'><li>Official Website</li></Link>
-                <Link className='footerLink'><li>Linked in</li></Link>
-                <Link className='footerLink'><li>Instagram</li></Link>
+                <Link className='footerLink' to={'https://www.cynuxera.in/'} target='_blank'><li>Official Website</li></Link>
+                <Link className='footerLink' to={'https://www.linkedin.com/company/cynux-era'} target='_blank'><li>Linked in</li></Link>
+                <Link className='footerLink' to={'https://www.instagram.com/cynux_era/'} target='_blank'><li>Instagram</li></Link>
                </ul>
             </div>
           </div>
         </div>
       </div>
       <span className='footercopyright'>&copy; 2025 CynuxEra. All rights reserved.</span>
-      <span className='footerbacktotop'>Back to top <FaArrowUp/></span>
+      <Link className='footerLink footerbacktotop' to={'/'}><span>Home <FaHome/></span></Link>
     </div>
   )
 }

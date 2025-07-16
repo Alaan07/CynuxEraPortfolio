@@ -6,13 +6,13 @@ function Projects() {
   const [slideIn, setSlideIn] = useState(false);
 
   const cards = [
-    {
-      title: "Saikodayo",
-      subtitle: "Anime E-commerce",
-      desc: "An immersive project showcasing the beauty and dynamic storytelling of anime. This highlights our ability to create engaging visual experiences and intricate animations.",
-      video: "/img/portfolio/saikodayo_vedio.mp4",
-      image: "/img/portfolio/toy.jpg"
-    },
+    // {
+    //   title: "Saikodayo",
+    //   subtitle: "Anime E-commerce",
+    //   desc: "An immersive project showcasing the beauty and dynamic storytelling of anime. This highlights our ability to create engaging visual experiences and intricate animations.",
+    //   video: "/img/portfolio/saikodayo_vedio.mp4",
+    //   image: "/img/portfolio/toy.jpg"
+    // },
     {
       title: "TastyExpress",
       subtitle: "Food Delivery Redefined",
@@ -20,20 +20,20 @@ function Projects() {
       video: "/img/portfolio/tomato_vedio.mp4",
       image: "/img/portfolio/tomato.jpg"
     },
-    {
-      title: "Greenkart",
-      subtitle: "Eco-friendly",
-      desc: "Greenkart is an eco-friendly e-commerce platform for organic plants, and sustainable products. It promotes green living through a clean, user-friendly interface and conscious product choices.",
-      video: "/img/portfolio/greenkart_vedio.mp4",
-      image: "/img/portfolio/greenkart.jpg"
-    },
-    {
-      title: "Sweet Delights",
-      subtitle: "Chocolate Creations",
-      desc: "A delightful project exploring the aesthetics and artistry of chocolate creations. This demonstrates our attention to detail and ability to bring appealing concepts to life visually.",
-      video: "/img/portfolio/choco_vedio.mp4",
-      image: "/img/portfolio/choco.jpg"
-    },
+    // {
+    //   title: "Greenkart",
+    //   subtitle: "Eco-friendly",
+    //   desc: "Greenkart is an eco-friendly e-commerce platform for organic plants, and sustainable products. It promotes green living through a clean, user-friendly interface and conscious product choices.",
+    //   video: "/img/portfolio/greenkart_vedio.mp4",
+    //   image: "/img/portfolio/greenkart.jpg"
+    // },
+    // {
+    //   title: "Sweet Delights",
+    //   subtitle: "Chocolate Creations",
+    //   desc: "A delightful project exploring the aesthetics and artistry of chocolate creations. This demonstrates our attention to detail and ability to bring appealing concepts to life visually.",
+    //   video: "/img/portfolio/choco_vedio.mp4",
+    //   image: "/img/portfolio/choco.jpg"
+    // },
     {
       title: "Language Translation System",
       subtitle: "ML model",
@@ -41,27 +41,27 @@ function Projects() {
       video: "/img/portfolio/ml_vedio.mp4",
       image: "/img/portfolio/ml.jpg"
     },
-    {
-      title: "Rapid Rentals",
-      subtitle: "Bike Rental App",
-      desc: "A comprehensive mobile application for renting bikes, featuring a user-friendly interface for Browse, booking, and managing rentals. The app is designed for seamless user experience and efficient bike management.",
-      video: "/img/portfolio/bike.mp4",
-      image: "/img/portfolio/rapid_rentals.jpg"
-    },
+    // {
+    //   title: "Rapid Rentals",
+    //   subtitle: "Bike Rental App",
+    //   desc: "A comprehensive mobile application for renting bikes, featuring a user-friendly interface for Browse, booking, and managing rentals. The app is designed for seamless user experience and efficient bike management.",
+    //   video: "/img/portfolio/bike.mp4",
+    //   image: "/img/portfolio/rapid_rentals.jpg"
+    // },
     {
       title: "Mitigating Crime Analysis",
       subtitle: "ML model",
       desc: "A project focused on analyzing crime data to identify patterns and insights for mitigation strategies. This involves data processing, visualization, and predictive modeling, showcasing our expertise in data science and intelligent systems.",
       video: "/img/portfolio/crimevideo.mp4",
       image: "/img/portfolio/crime.jpg"
-    },
-    {
-      title: "College Canteen",
-      subtitle: "Smart Food Ordering App",
-      desc: "An intuitive food ordering application tailored for college campuses. Users can browse diverse menus, place orders, and make secure payments seamlessly.",
-      video: "/img/portfolio/figma.mp4",
-      image: "/img/portfolio/colleege.jpg"
     }
+    // {
+    //   title: "College Canteen",
+    //   subtitle: "Smart Food Ordering App",
+    //   desc: "An intuitive food ordering application tailored for college campuses. Users can browse diverse menus, place orders, and make secure payments seamlessly.",
+    //   video: "/img/portfolio/figma.mp4",
+    //   image: "/img/portfolio/colleege.jpg"
+    // }
   ];
 
   const openCard = (card) => {
@@ -82,7 +82,10 @@ function Projects() {
             <h1 className="projecth1">Projects</h1>
             <h2 className="projecth2">We are creating unique Web Design. Meet our featured projects.</h2>
             <p className="projectdesc">
-              Be what you would seem to be – or, if you’d like it put more simply – never imagine yourself not to be otherwise than what it might appear to others that what you were or <Link to="/" className='prolicktohome' id='#HomeTag'>might have been</Link> was not otherwise than what you had been would have appeared to them to be otherwise.
+              {/* Be what you would seem to be – or, if you’d like it put more simply – never imagine yourself not to be otherwise than what it might appear to others that what you were or <Link to="/" className='prolicktohome' id='#HomeTag'>might have been</Link> was not otherwise than what you had been would have appeared to them to be otherwise. */}
+
+              Showcasing our diverse range of innovative solutions — from intuitive designs to powerful, scalable platforms — each project reflects our passion for crafting technology that empowers and inspires.
+
             </p>
           </div>
 
@@ -112,6 +115,18 @@ function Projects() {
                 </div>
               </div>
             ))}
+
+
+              <div className="card view-more-card">
+                <a href="/projects" className="view-more-link">
+                  <div className="veiwmorecardcontant">
+                    <h3>View More</h3>
+                    <p>Explore all our projects</p>
+                  </div>
+                </a>
+              </div>
+
+
           </div>
 
           <div className='proHomerighVid'>
@@ -150,6 +165,7 @@ function Projects() {
         </div>
       </div>
     )}
+
 
     </div>
   );
