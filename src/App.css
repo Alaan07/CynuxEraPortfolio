@@ -760,6 +760,9 @@ body {
   text-align: center; 
 }
 
+.forphoneviewimgdiv{
+  display: none;
+}
 
  .trustedBy{
     margin-top: 2rem;
@@ -1032,14 +1035,33 @@ position: relative;
 
 /* 👇 Responsive for medium screens */
 @media (max-width: 768px) {
+  .leftfooter{
+    display: none !important;
+  }
 
-  .menudivright{
+  .rightfooter{
+    width: 100% !important;
+  }
+
+
+
+  .forphoneviewimgdiv {
+    display: block;
+  }
+
+  .shieldwingsimg {
+    width: 25rem;
+    animation: animationstuff 5s infinite ease-in-out;
+  }
+
+  .menudivright {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
     margin: 0;
   }
-  .menubarlistadd{
+
+  .menubarlistadd {
     padding-left: 4rem;
     text-align: left;
     justify-content: center;
@@ -1052,9 +1074,10 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 50px;
   }
 
- 
   .HomeSubHeading h2 {
     display: flex;
     align-items: center;
@@ -1069,12 +1092,32 @@ position: relative;
   }
 }
 
+@keyframes animationstuff {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+}
+
+
+
+
+
 @media (max-width: 600px){
   .procardsectionHome{
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
+ 
 /* 👇 Hide nav_right only on very small screens */
 @media (max-width: 520px) {
   .nav_right {

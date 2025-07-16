@@ -232,7 +232,19 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                 </div>
 
             </div>
+
+              <div className="forphoneviewimgdiv">
+                <img src="/img/newEXP/shieldwingsnobg.png" alt="" className='shieldwingsimg'/>
+              </div>
+
           </div>
+
+
+
+
+
+
+
 
 
 
