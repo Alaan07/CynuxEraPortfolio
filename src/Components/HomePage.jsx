@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import {FaBars} from "react-icons/fa";
 import ProjectsHome from './ProjectHomePage.jsx';
 import Footer from './footer.jsx';
+import ContactPage from './ContactPage.jsx';
 
 function HomePage() {
 
@@ -145,7 +146,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                         <Link to={'/'} onClick={toggleMenu} className='menubarlinks'><li className='menubarli'><span>Home</span></li></Link>
                         <Link className='menubarlinks'><li className='menubarli'><span>About us</span></li></Link>
                         <Link to={'/projects'} className='menubarlinks'><li className='menubarli'><span>Project</span></li></Link>
-                        <Link className='menubarlinks'><li className='menubarli'><span>Contact us</span></li></Link>
+                        <Link className='menubarlinks' to={'/contact'}><li className='menubarli'><span>Contact us</span></li></Link>
                       </ul>
                   </div>
 
@@ -166,6 +167,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
                   </div>           
               </div>
+              
               </div>
 
       
@@ -221,7 +223,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
               </div>
 
                 <div className="trustedBy">
-                  <h3 className='Trustheading'>Tusted by ...</h3>
+                  <h3 className='Trustheading'>Trusted by ...</h3>
 
                  <img src="/img/newEXP/dsu.png" alt="reva"  className='dsutrustedimg'/>
                  <img src="/img/newEXP/Reva_logo.jpeg" alt="jain" className='revatrustedimg' />
@@ -288,13 +290,14 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
           <span></span>
         </div>
 
-      
+        <div className="contact">
+        <ContactPage/>
+      </div>
 
               
       <div className='footerhomediv'>
             <Footer/>
       </div>
-
 
 
     </div>
