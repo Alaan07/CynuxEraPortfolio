@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaHome } from 'react-icons/fa'
+import { FaArrowUp } from 'react-icons/fa'
 
 function footer() {
   return (
@@ -52,7 +52,7 @@ function footer() {
         </div>
       </div>
       <span className='footercopyright'>&copy; 2025 CynuxEra. All rights reserved.</span>
-      <Link className='footerLink footerbacktotop' to={'/'}><span>Home <FaHome/></span></Link>
+      <a className="footerLink footerbacktotop" href="#top"><span>Back to top <FaArrowUp /></span></a>
     </div>
   )
 }

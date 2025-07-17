@@ -78,7 +78,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   
   return (
-    <div className="everything">
+    <div className="everything" id='top'>
     
     <div className="wholeContainer">
       <div className="homemainbody" id='HomeTag'>
@@ -103,8 +103,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                 {/* Close Button */}
 
                 <div className='menubarwholebody' style={{ display: isMenuOpen ? 'flex' : 'none' }}>
-                <span className="close-btn"
-                  onClick={toggleMenu}>X</span>
+                <span className="close-btn" onClick={toggleMenu}>X </span>
 
                   <div className='menudivleft'>
                     <div className="testtt">
