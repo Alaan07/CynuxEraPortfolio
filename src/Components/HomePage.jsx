@@ -279,6 +279,17 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
      <div className="projectMainBody">
               <ProjectsHome/>
      </div>
+
+      
+      <div className="dot-loader" >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      
+
               
       <div className='footerhomediv'>
             <Footer/>
