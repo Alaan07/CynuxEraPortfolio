@@ -159,6 +159,7 @@ function App() {
         <main
           className="main-content"
           style={{
+            marginTop: "7rem",
             marginLeft: "33vw",
             position: "relative",
             zIndex: 2,
@@ -268,7 +269,7 @@ function App() {
         {/* 🧭 Footer */}
         <div
           className="footerhomediv"
-          style={{ marginLeft: "30vw", zIndex: 2, position: "relative" }}
+          style={{ marginLeft: "31vw", zIndex: 2, position: "relative" }}
         >
           <Footer />
         </div>

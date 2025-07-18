@@ -682,10 +682,7 @@ body {
   padding: 0 50px;
   box-sizing: border-box;
   z-index: 50;
-
-
   transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
-
   background-color: transparent;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
@@ -696,9 +693,6 @@ body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
-
-
-
 
 .navbar_logo{
   padding : 0;
@@ -1344,22 +1338,6 @@ position: relative;
   scroll-behavior: smooth;
 }
 
-.scroll-procardsectionHome::-webkit-scrollbar {
-  width: 6px;
-}
-
-.scroll-procardsectionHome::-webkit-scrollbar-track {
-  background: #111; /* match container background */
-}
-
-.scroll-procardsectionHome::-webkit-scrollbar-thumb {
-  background: #333; /* slightly lighter than background */
-  border-radius: 3px;
-}
-
-.scroll-procardsectionHome::-webkit-scrollbar-thumb:hover {
-  background: #555; /* little more visible on hover */
-}
 
 .proHomerighVid{
   position: relative;
@@ -2124,8 +2102,6 @@ color: #96539b;
   height: 100vh;
   margin-left: 12%;
   margin-right: 12%;
-  
-
 }
 
 .contact-left {
@@ -2321,12 +2297,68 @@ color: #96539b;
 
 }
 
+@media screen and (max-width: 1200px) {
+  .contact-wrapper {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    padding: 0;
+  }
+
+  .contact-left {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    visibility: hidden !important;
+  }
+  .contact-right {
+    width: 85%;
+    padding: 20px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-image {
+    display: none !important;
+   
+  }
+
+  .contact-container {
+    padding: 20px;
+    height: auto;
+    width: 100%;
+  }
+
+  .contact-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  .contact-form button {
+    width: 105%;
+  }
+
+}
+
 
 
 .solar-contact-system {
   position: relative;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   margin: auto;
   top: 60px;
 }
@@ -2372,7 +2404,7 @@ color: #96539b;
   height: 340px;
 }
 .orbit-5 {
-  width: 700px;
+  width: 600px;
   height: 400px;
 }
 
@@ -2467,13 +2499,13 @@ color: #96539b;
 
 /****Contact Card **************/
 body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  /* margin: 0;
+  padding: 0; */
+  /* overflow-x: hidden;
   overflow-y: auto;
-  height: 100%;
+  height: 100%; */
   background-color: #0e0d26;
-  position: relative;
+  /* position: relative; */
 }
 
 
@@ -2564,16 +2596,91 @@ body, html {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  html, body {
+  /* html, body {
     overflow-y: scroll;
     overflow-x: hidden;
     height: auto;
     padding-top: 20px; 
-  }
+  } */
   .media-image-contact {
     background-image: none !important; 
     background-color:Trans !important;
   }
+
+  .main-content {
+    margin-left: 5vw;
+    margin-right:5vw;
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  overflow-y: auto ;
+  }
+  .hero-title,
+  .hero-desc {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-top: 16px;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 12px;
+  }
+
+  .cards,
+  .contact-card-wrapper {
+   padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+    min-width: 280px;
+    margin: 0 auto;
+    animation: slideFadeIn 0.6s ease-out forwards;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card:nth-child(1) { animation-delay: 0.1s; }
+  .card:nth-child(2) { animation-delay: 0.2s; }
+  .card:nth-child(3) { animation-delay: 0.3s; }
+
+  .location-address,
+  .social-link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  /* html, body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: auto;
+    padding-top: 20px; 
+  } */
+  /* .media-image-contact {
+    background-image: none !important; 
+    background-color:Trans !important;
+  } */
 
   .main-content {
     margin-left: 5vw;
