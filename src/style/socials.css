@@ -1,0 +1,126 @@
+/* ------------------------------------------------*/
+/* Socials Start */
+/* ------------------------------------------------*/
+.socials-mobile {
+  display: block;
+  position: relative;
+  padding: 3rem 0;
+  text-align: center;
+}
+.socials-mobile ul {
+  display: block;
+  padding: 0 3rem;
+}
+.socials-mobile ul li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.socials-mobile ul li:last-of-type {
+  margin-right: 0;
+}
+.socials-mobile ul li a {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #b3bbc3;
+}
+@media only screen and (min-width: 768px) {
+  .socials-mobile {
+    padding: 5rem 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .socials-mobile {
+    display: none;
+  }
+}
+
+.socials-menu {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .socials-menu {
+    display: inline-block;
+  }
+  .socials-menu ul {
+    display: block;
+    margin-left: 2.4rem;
+  }
+  .socials-menu ul li {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  .socials-menu ul li:last-of-type {
+    margin-right: 0;
+  }
+  .socials-menu ul li a {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, right top, from(#fbb7e6), color-stop(50%, #a691cf), color-stop(50%, #ffffff));
+    background-image: -moz-linear-gradient(left, #fbb7e6, #a691cf 50%, #ffffff 50%);
+    background-image: -o-linear-gradient(left, #fbb7e6, #a691cf 50%, #ffffff 50%);
+    background-image: linear-gradient(to right, #fbb7e6, #a691cf 50%, #ffffff 50%);
+    -moz-background-size: 200% 100%;
+         background-size: 200% 100%;
+    background-position: -100%;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .no-touch .socials-menu ul li:hover a {
+    background-position: 0;
+  }
+}
+
+.socials-desktop {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .socials-desktop {
+    display: block;
+  }
+  .socials-desktop ul {
+    display: block;
+    margin-right: 2.4rem;
+  }
+  .socials-desktop ul li {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  .socials-desktop ul li:last-of-type {
+    margin-right: 0;
+  }
+  .socials-desktop ul li a {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, right top, from(#fbb7e6), color-stop(50%, #a691cf), color-stop(50%, #ffffff));
+    background-image: -moz-linear-gradient(left, #fbb7e6, #a691cf 50%, #ffffff 50%);
+    background-image: -o-linear-gradient(left, #fbb7e6, #a691cf 50%, #ffffff 50%);
+    background-image: linear-gradient(to right, #fbb7e6, #a691cf 50%, #ffffff 50%);
+    -moz-background-size: 200% 100%;
+         background-size: 200% 100%;
+    background-position: -100%;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .no-touch .socials-desktop ul li:hover a {
+    background-position: 0;
+  }
+}
+
+/* ------------------------------------------------*/
+/* Socials End */
+/* ------------------------------------------------*/

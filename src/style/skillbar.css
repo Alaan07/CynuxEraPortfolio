@@ -1,0 +1,71 @@
+/* ------------------------------------------------*/
+/* Skillbars Start */
+/* ------------------------------------------------*/
+.show-skillbar {
+  display: block;
+  padding: 0;
+  margin-bottom: 4rem;
+}
+.show-skillbar:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 6px;
+}
+
+.skillbar {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+}
+.skillbar::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  -moz-border-radius: 3px;
+       border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  height: 3rem;
+}
+
+.skillbar-bar {
+  display: inline-block;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0px;
+  height: 6px;
+  -moz-border-radius: 3px;
+       border-radius: 3px;
+  background-color: #6a47af;
+  background: -webkit-gradient(linear, left top, right top, from(#6a47af), to(#f987d6));
+  background: -moz-linear-gradient(left, #6a47af 0%, #f987d6 100%);
+  background: -o-linear-gradient(left, #6a47af 0%, #f987d6 100%);
+  background: linear-gradient(to right, #6a47af 0%, #f987d6 100%);
+}
+
+.skill-bar-percent {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font: normal 600 2rem/1.2 "Poppins", sans-serif;
+  font-variant-numeric: lining-nums;
+  color: #ffffff;
+  height: 3rem;
+}
+
+/* ------------------------------------------------*/
+/* Skillbars End */
+/* ------------------------------------------------*/

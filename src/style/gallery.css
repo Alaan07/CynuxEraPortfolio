@@ -1,0 +1,248 @@
+/* ------------------------------------------------*/
+/* Gallery Custom Styles Start */
+/* ------------------------------------------------*/
+.works__gallery {
+  position: relative;
+}
+
+.gallery-glow-safe {
+  position: relative;
+  overflow: visible !important;
+  z-index: 2;
+  padding: 1.2rem;
+  height: 100%;
+}
+
+.my-gallery__item {
+  border-radius: 1rem;
+  transition: box-shadow 0.3s ease-in-out;
+  height: 100%;
+}
+
+.my-gallery__item:last-of-type {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .my-gallery__item:nth-of-type(5) {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .my-gallery__item {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  
+  }
+  .no-touch .my-gallery__item:hover {
+    -webkit-transform: translateY(-0.4rem);
+       -moz-transform: translateY(-0.4rem);
+        -ms-transform: translateY(-0.4rem);
+            transform: translateY(-0.4rem); 
+  box-shadow:
+    0 -12px 35px rgba(180, 0, 255, 0.8),
+    0 12px 35px rgba(255, 20, 147, 0.7);
+  transform: translateY(-5px);
+    
+  }
+
+
+  .no-touch .my-gallery__item:hover .my-gallery__description {
+    opacity: 1;
+  }
+  .no-touch .my-gallery__item:hover .my-gallery__description h4 {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  .no-touch .my-gallery__item:hover .my-gallery__description h4 small {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.my-gallery__link {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+  
+}
+
+.my-gallery__description {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  padding: 3.6rem;
+  color: #fff;
+  border-radius: 15px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-gallery__description h4 {
+  margin: 0;
+}
+
+.bottom-overlay {
+  margin-top: auto; /* pushes it to bottom */
+  background: rgba(0, 0, 0, 0.6); /* transparent background only for this */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 1rem;
+}
+
+.bottom-overlay p {
+  font: normal 300 1.6rem/1.6 "Poppins", sans-serif;
+  color: #b3bbc3;
+  margin: 0;
+}
+
+/* hover effects for larger screens */
+@media only screen and (min-width: 1200px) {
+  .my-gallery__description {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .my-gallery__description h4 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s 0.3s ease-in-out, transform 0.3s 0.3s;
+  }
+
+  .my-gallery__description h4 small {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s 0.4s ease-in-out, transform 0.3s 0.4s ease-in-out;
+  }
+
+  .my-gallery__item:hover .my-gallery__description {
+    opacity: 1;
+  }
+}
+
+.bottom-overlay {
+  margin-top: auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 1rem;
+}
+
+.bottom-overlay p {
+  font: normal 300 1.6rem/1.6 "Poppins", sans-serif;
+  color: #b3bbc3;
+  margin: 0;
+}
+
+.view-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: rgba(0, 0, 0, 0.6); /* gives its own transparent bg */
+  color: #fff;
+  font: 400 1.4rem "Poppins", sans-serif;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out;
+}
+
+.view-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* absolutely position the view button at the bottom */
+.absolute-button {
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+
+.pswp__caption__center {
+  max-width: 540px;
+  padding: 2.4rem 10%;
+}
+.pswp__caption__center h4 {
+  font: normal 600 2.4rem/1.2 "Poppins", sans-serif;
+  color: #ffffff;
+}
+.pswp__caption__center h4 small {
+  display: block;
+  font: normal 300 1.4rem/1.6 "Poppins", sans-serif;
+}
+.pswp__caption__center p {
+  margin-top: 1.3rem;
+  font: normal 300 1.4rem/1.6 "Poppins", sans-serif;
+  color: #b3bbc3;
+}
+@media only screen and (min-width: 1200px) {
+  .pswp__caption__center {
+    padding: 2.4rem 8rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .pswp__caption__center {
+    padding: 2.4rem 10rem;
+  }
+}
+
+.pswp__counter {
+  font-family: "Poppins", sans-serif;
+}
+
+.pswp__button--close {
+  opacity: 1;
+}
+
+.pswp__button--arrow--left::before, .pswp__button--arrow--right::before {
+  width: 44px;
+  height: 44px;
+}
+
+.pswp__button--arrow--left:before {
+  left: 0;
+  background-position: -132px -44px;
+}
+
+.pswp__button--arrow--right:before {
+  right: 0;
+  background-position: -88px -44px;
+}
+
+.pswp__bg {
+  background:rgba(0, 0, 0, 0.6);
+}
+
+.pswp__caption, .pswp__top-bar {
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+.pswp__button--close {
+  background-color: #f987d6;
+}
+
+/* ------------------------------------------------*/
+/* Gallery Custom Styles End */
+/* ------------------------------------------------*/

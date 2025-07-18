@@ -195,7 +195,7 @@ function Projects() {
                       <span>Home</span>
                     </li>
                   </Link>
-                  <Link className="menubarlinks">
+                  <Link className="menubarlinks" to={'/about'}>
                     <li className="menubarli">
                       <span>About us</span>
                     </li>

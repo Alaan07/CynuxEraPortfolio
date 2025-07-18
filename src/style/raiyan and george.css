@@ -1,0 +1,457 @@
+/* ------------------------------------------------*/
+/* George Project , Raiyan About us ....custom css */
+/* ------------------------------------------------*/
+.headline__logo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+/* Text size for "We're..." headline */
+.large {
+  font-size: 7rem;
+  line-height: 1.21;
+  white-space: nowrap;
+  text-align: left;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.0rem;
+}
+
+/* Container for switching text */
+.dynamic-text-container {
+  display: inline-block;
+  position: relative;
+  width: 220px;
+  height: 1.1em;
+  vertical-align: baseline;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Animated dynamic text */
+.dynamic-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  font-size: inherit;
+  line-height: inherit;
+  transition: opacity 0.5s;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.dynamic-text:nth-child(1) {
+  animation: fadeInOut 4s infinite;
+  animation-delay: 0s;
+}
+
+.dynamic-text:nth-child(2) {
+  animation: fadeInOut 4s infinite;
+  animation-delay: 2s;
+}
+
+/* Animated logo switcher */
+.logo-switcher {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 180px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.logo-switcher img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  object-fit: contain;
+}
+
+.logo1 {
+  animation: logoFade 4s infinite;
+  animation-delay: 0s;
+}
+
+.logo2 {
+  animation: logoFade 4s infinite;
+  animation-delay: 2s;
+}
+
+/* Animations */
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 45% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+
+@keyframes logoFade {
+  0%, 100% { opacity: 0; }
+  10%, 45% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+
+/* dekstopview */
+
+@media (min-width: 1200px) {
+.large{
+  margin-left: 1em;
+  font-size: 5rem;
+  max-width: 60%;
+}
+}
+
+
+
+
+
+
+
+/* Tablets */
+@media (max-width: 900px) {
+  .headline__logo,
+  .logo-switcher {
+    max-width: 90vw;
+    /* width: 96vw; */
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .large {
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    white-space: normal;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .dynamic-text-container {
+    width: clamp(120px, 40vw, 180px);
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 575px) {
+  .headline__logo {
+    max-width: 100vw;
+    padding: 0 14px;
+    box-sizing: border-box;
+  }
+
+  .logo-switcher {
+    height: 64px;
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-switcher img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .large {
+    font-size: clamp(2.4rem, 8vw, 3.4rem);
+    line-height: 1.3;
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .dynamic-text-container {
+    /* display: inline-block; */
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    /* display: flex;
+    justify-content: center; */
+    box-sizing: border-box;
+  }
+
+  .dynamic-text {
+    display: inline-block;
+    position: relative; 
+    width: 100%;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.3;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    opacity: 0;
+    animation: fadeInOut 4s infinite;
+  }
+
+
+.developerss{
+  margin-top: 0;
+  float: right;
+  position: absolute
+}
+
+
+}
+
+/* Extra Small Screens */
+@media (max-width: 400px) {
+  .headline__logo,
+  .logo-switcher {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .logo-switcher {
+    height: 48px;
+    max-width: 160px;
+  }
+
+  .logo-switcher img {
+    height: 48px;
+  }
+}
+*****************************************
+
+.large {
+    font-size: clamp(2.4rem, 8vw, 3.4rem);
+    line-height: 1.3;
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .dynamic-text-container {
+    /* display: inline-block; */
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    /* display: flex;
+    justify-content: center; */
+    box-sizing: border-box;
+  }
+
+  .dynamic-text {
+    display: inline-block;
+    position: relative; 
+    width: 100%;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.3;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    opacity: 0;
+    animation: fadeInOut 4s infinite;
+  }
+
+
+.developerss{
+  margin-top: 0;
+  float: right;
+  position: absolute
+}
+
+
+
+
+  *******************************************
+  /* .large {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    text-align: center;
+    padding: 0;
+  }
+
+  .dynamic-text-container {
+    height: auto;
+    width: auto;
+  }
+
+  .dynamic-text {
+    font-size: clamp(1.2rem, 10vw, 2.2rem);
+  } */
+
+/* George */
+
+.feature__item {
+  transition: all 0.4s ease;
+  background: #1b103a;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(255, 0, 255, 0.05); /* Initial subtle glow */
+}
+
+.feature__item:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.feature__image img {
+  transition: transform 0.4s ease;
+  border-radius: 12px;
+}
+
+.feature__item:hover .feature__image img {
+  transform: scale(1.08);
+}
+
+.feature__descr {
+  transition: transform 0.4s ease;
+}
+
+.feature__item:hover .feature__descr {
+  transform: translateY(-5px);
+}
+
+/* Optional border or pulse effect */
+.feature__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.feature__item:hover::after {
+  box-shadow: 0 0 12px #ff00cc, 0 0 24px #00ccff;
+}
+
+/* project page vedio modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+.modal-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 90%;
+  width: 1200px;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .modal-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box, .desc-box {
+    width: 100%;
+  }
+}
+.vidclosebtnclass{
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margib-bottom: 1rem;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius:10px;
+  border : 2px solid #ffffff;
+}
+
+.vidclosebtnclass:hover{
+  cursor: pointer;
+  border: 2px solid rgb(181, 87, 175);
+  box-shadow: 2px 2px 10px 5px rgba(228, 115, 228, 0.25), -2px -2px 10px 5px rgba(228, 115, 228, 0.25);
+}
+
+
+.video-box {
+  flex: 4;
+  background: #000;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow:
+    0 -15px 45px rgba(180, 0, 255, 0.8),
+    0 15px 45px rgba(255, 20, 147, 0.7);
+}
+
+.desc-box {
+  flex: 1.5;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  color: #ccc;
+  font: normal 300 1.4rem/1.6 "Poppins", sans-serif;
+}
+
+.desc-box h3 {
+  font: 600 2rem "Poppins", sans-serif;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+ .close {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 10000000000;
+  pointer-events: auto;
+}

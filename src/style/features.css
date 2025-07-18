@@ -1,0 +1,101 @@
+/* ------------------------------------------------*/
+/* Features Start */
+/* ------------------------------------------------*/
+.feature {
+  margin-bottom: 3rem;
+}
+.feature:last-of-type {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .feature {
+    margin-bottom: 0;
+  }
+}
+
+.feature__item {
+  position: relative;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+.feature__image {
+  position: relative;
+}
+
+.feature__icon {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+}
+
+.feature__descr {
+  margin-top: 2rem;
+}
+
+.feature__title {
+  font: normal 600 2.4rem/1.2 "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.feature__subtitle {
+  display: block;
+  position: relative;
+  font: normal 600 1.4rem/1.6 "Poppins", sans-serif;
+  color: #f987d6;
+  padding-left: 6rem;
+  margin-bottom: 1.2rem;
+}
+.subtitle-tight {
+  margin-top: -4px; /* or adjust as needed */
+  display: block;
+  line-height: 0.8; /* tighter line spacing */
+}
+
+.feature__subtitle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 2px;
+  -moz-border-radius: 2px;
+       border-radius: 2px;
+  background-color: #f987d6;
+  background: -webkit-gradient(linear, left top, right top, from(#6a47af), to(#f987d6));
+  background: -moz-linear-gradient(left, #6a47af 0%, #f987d6 100%);
+  background: -o-linear-gradient(left, #6a47af 0%, #f987d6 100%);
+  background: linear-gradient(to right, #6a47af 0%, #f987d6 100%);
+}
+
+.feature__text {
+  font: normal 300 1.4rem/1.6 "Poppins", sans-serif;
+  color: #b3bbc3;
+  margin-top: 1.3rem;
+}
+@media only screen and (min-width: 1400px) {
+  .feature__text {
+    font-size: 1.5rem;
+  }
+}
+
+/* ------------------------------------------------*/
+/* Features End */
+/* ------------------------------------------------*/

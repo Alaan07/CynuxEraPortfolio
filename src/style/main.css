@@ -1,0 +1,511 @@
+/*
+ * ------------------------------------------------
+ * Table of Contents
+ * ------------------------------------------------
+ *  1. Template Backgrounds
+ *  2. Fonts
+ *  3. Base CSS Styles
+ *  4. Cursor
+ *  5. Transitions
+ *  6. Typography
+ *  7. Buttons & Triggers
+ *  8. Forms and Forms Reply Groups
+ *  9. Animated Backgrounds
+ *  10. Header
+ *  11. Main Section
+ *  12. Socials
+ *  13. Countdown
+ *  14. Menu
+ *  15. Popup
+ *  16. Inner Sections
+ *  17. Skillbars
+ *  18. Showreel
+ *  19. Features
+ *  20. Contact Data
+ *  21. Swiper Slider Custom
+ *  22. Gallery Custom Styles
+ * ------------------------------------------------
+ * Table of Contents End
+ * ------------------------------------------------ */
+ 
+/* ------------------------------------------------*/
+/* Template Backgrounds Start */
+/* ------------------------------------------------*/
+.media-image-1 {
+  background-image: url("../img/backgrounds/new_home1.jpg");
+}
+
+.media-image-2 {
+  background-image: url("../img/backgrounds/new_home1.jpg");
+}
+
+.slide-image-1 {
+  background-image: url("../img/backgrounds/new_home1.jpg");
+}
+
+.slide-image-2 {
+  background-image: url("../img/backgrounds/new_home1.jpg");
+}
+
+.slide-image-3 {
+  background-image: url("../img/backgrounds/new_home1.jpg");
+}
+
+.project-main-image-1 {
+  background-image: url("../img/projects/1200x600-project-main-image-1.webp");
+}
+
+.project-main-image-2 {
+  background-image: url("../img/projects/1200x600-project-main-image-2.webp");
+}
+
+.project-main-image-3 {
+  background-image: url("../img/projects/1200x600-project-main-image-3.webp");
+}
+
+.menu-image-1 {
+  background-image: url("../img/backgrounds/new_home2.jpg");
+}
+
+.media-image-about {
+  background-image: url("../img/backgrounds/new_home1.jpg");
+}
+
+.media-image-portfolio {
+  background-image: url("../img/backgrounds/new_home1.jpg");
+}
+
+.media-image-contact {
+  background-image: url("../img/backgrounds/new_home1.jpg");
+}
+
+.showreel-image-1 {
+  background-image: url("../img/backgrounds/1400x700-video-bg.webp");
+}
+
+.contactdata-item-1 {
+  background-image: url("../img/svg/icon-contact-bg-1.svg");
+}
+
+.contactdata-item-2 {
+  background-image: url("../img/svg/icon-contact-bg-2.svg");
+  background-position: bottom -10px right -86px;
+}
+
+.contactdata-item-3 {
+  background-image: url("../img/svg/icon-contact-bg-3.svg");
+}
+
+/* Hide background image on screens smaller than 992px */
+@media (max-width: 991px) {
+  .media-image-1,
+  .media-image-2,
+  .slide-image-1,
+  .slide-image-2,
+  .slide-image-3,
+  .media-image-about,
+  .media-image-portfolio,
+  .media-image-contact {
+    background-image: none !important;
+  }
+}
+@media (max-width: 991px) {
+  .main__media {
+    display: none !important;
+  }
+
+  .main .container-fluid.fullheight,
+  .main .row.fullheight {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .main__intro {
+    height: auto !important;
+    min-height: 0 !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .media-image-portfolio, .inner__media{
+    display: none;
+  }
+}
+
+
+
+
+/* ------------------------------------------------*/
+/* Template Backgrounds End */
+/* ------------------------------------------------*/
+/* ------------------------------------------------*/
+/* Fonts Start */
+/* ------------------------------------------------*/
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Poppins-Light/Poppins-Lightd41d.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Light/Poppins-Light.woff2") format("woff2"), url("../fonts/Poppins-Light/Poppins-Light.woff") format("woff"), url("../fonts/Poppins-Light/Poppins-Light.ttf") format("truetype"), url("../fonts/Poppins-Light/Poppins-Light.svg#Poppins") format("svg");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Poppins-Regular/Poppins-Regulard41d.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins-Regular/Poppins-Regular.svg#Poppins") format("svg");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Poppins-Medium/Poppins-Mediumd41d.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Medium/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins-Medium/Poppins-Medium.ttf") format("truetype"), url("../fonts/Poppins-Medium/Poppins-Medium.svg#Poppins") format("svg");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Poppins-SemiBold/Poppins-SemiBoldd41d.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-SemiBold/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/Poppins-SemiBold/Poppins-SemiBold.svg#Poppins") format("svg");
+}
+/* ------------------------------------------------*/
+/* Fonts End */
+/* ------------------------------------------------*/
+/* ------------------------------------------------*/
+/* Base CSS Styles Start */
+/* ------------------------------------------------*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button:active, button:focus {
+  outline: none !important;
+}
+
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
+input::-moz-focus-inner {
+  border: 0 !important;
+}
+
+::-moz-selection {
+  background-color: rgba(106, 71, 175, 0.3);
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: rgba(106, 71, 175, 0.3);
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 5px;
+  background: rgba(0, 0, 0, 0);
+}
+@media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    display: block;
+  }
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f987d6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#977ec7), to(#f987d6));
+  background: linear-gradient(to bottom, #977ec7 0%, #f987d6 100%);
+  border-radius: 10px;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  min-width: 360px;
+  overflow-x: hidden !important;
+  font: normal 400 1.6rem/1.6 "Poppins", sans-serif;
+  color: #676767;
+  background-color: #07051c;
+}
+
+section {
+  position: relative;
+  min-width: 360px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.fullheight {
+  position: static;
+  height: auto;
+}
+@media only screen and (min-width: 992px) {
+  .fullheight {
+    position: relative;
+    height: 100%;
+  }
+}
+
+.fullheight-mobile {
+  position: relative;
+  height: 100%;
+}
+
+.color-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.color-layer-medium {
+  background-color: rgba(7, 5, 28, 0.4);
+}
+
+.color-layer-dark {
+  background-color: rgba(7, 5, 28, 0.6);
+}
+
+.gradient-layer-to-bottom {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(7, 5, 28, 0.5)), to(rgba(7, 5, 28, 0)));
+  background: -moz-linear-gradient(top, rgba(7, 5, 28, 0.5) 3%, rgba(7, 5, 28, 0) 100%);
+  background: -o-linear-gradient(top, rgba(7, 5, 28, 0.5) 3%, rgba(7, 5, 28, 0) 100%);
+  background: linear-gradient(to bottom, rgba(7, 5, 28, 0.5) 3%, rgba(7, 5, 28, 0) 100%);
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.block-rounded-l {
+  -moz-border-radius: 15px;
+       border-radius: 15px;
+  overflow: hidden;
+}
+
+.block-rounded-m {
+  -moz-border-radius: 8px;
+       border-radius: 8px;
+  overflow: hidden;
+}
+
+.block-rounded-s {
+  -moz-border-radius: 6px;
+       border-radius: 6px;
+  overflow: hidden;
+}
+
+.fullwidth-container {
+  position: relative;
+  width: 100%;
+  height: 258px;
+}
+@media only screen and (min-width: 576px) {
+  .fullwidth-container {
+    height: 358px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fullwidth-container {
+    height: 418px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .fullwidth-container {
+    height: 518px;
+  }
+}
+
+.padding-top-14 {
+  padding-top: 1.4rem;
+}
+
+.padding-top-18 {
+  padding-top: 1.8rem;
+}
+
+/* ------------------------------------------------*/
+/* Base CSS Styles End */
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Main Section Styles Start */
+/* ------------------------------------------------*/
+.main {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #07051c;
+  padding-top: 104px;
+  z-index: 3;
+}
+@media only screen and (min-width: 768px) {
+  .main {
+    padding-top: 144px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main {
+    padding-top: 0;
+    min-height: 600px;
+    overflow: hidden;
+  }
+}
+
+.main__content {
+  position: relative;
+}
+@media only screen and (min-width: 1200px) {
+  .main__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main__intro,
+.main__media {
+  position: relative;
+}
+@media only screen and (min-width: 1200px) {
+  .main__intro,
+.main__media {
+    height: 100%;
+  }
+}
+
+.main__intro {
+  background-color: #07051c;
+}
+
+.intro__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro__content {
+  position: relative;
+  padding: 6rem 0;
+}
+@media only screen and (min-width: 1200px) {
+  .intro__content {
+    height: 100%;
+    padding: 0;
+  }
+}
+
+.headline {
+  position: relative;
+  width: 100%;
+  padding: 0 10%;
+}
+@media only screen and (min-width: 1200px) {
+  .headline {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    padding: 0 8rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .headline {
+    padding: 0 10rem;
+  }
+}
+
+.intro__button {
+  position: relative;
+  padding: 0 10%;
+  margin: 3rem 0;
+}
+@media only screen and (min-width: 768px) {
+  .intro__button {
+    margin: 5rem 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .intro__button {
+    position: absolute;
+    bottom: 5rem;
+    left: 8rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .intro__button {
+    bottom: 6rem;
+    left: 10rem;
+  }
+}
+
+.main__media {
+  height: 100vh;
+  min-height: 600px;
+}
+@media only screen and (min-width: 1200px) {
+  .main__media {
+    height: 100%;
+    min-height: auto;
+  }
+}
+
+.media__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: cover;
+       background-size: cover;
+}
+
+/* ------------------------------------------------*/
+/* Main Section Styles End */
+/* ------------------------------------------------*/

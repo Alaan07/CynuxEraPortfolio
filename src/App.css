@@ -172,9 +172,9 @@ body {
 
 .side-menu .close-btn {
   margin-top: 0px;
-    padding-right: 20px;
+  padding-right: 30px;
   z-index: 30;
-  width: 14px;
+  width: 50px;
   position: absolute;
   top: 50px;
   right: 80px;

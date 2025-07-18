@@ -5,6 +5,7 @@ import { FaGlobe } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import {FaBars} from "react-icons/fa";
+import AboutHome from "./AboutHomePage.jsx";
 import ProjectsHome from './ProjectHomePage.jsx';
 import Footer from './footer.jsx';
 import ContactPage from './ContactPage.jsx';
@@ -144,7 +145,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                     <div className='menubarlistmenu'>
                       <ul>
                         <Link to={'/'} onClick={toggleMenu} className='menubarlinks'><li className='menubarli'><span>Home</span></li></Link>
-                        <Link className='menubarlinks'><li className='menubarli'><span>About us</span></li></Link>
+                        <Link className='menubarlinks' to={'/about'}><li className='menubarli'><span>About us</span></li></Link>
                         <Link to={'/projects'} className='menubarlinks'><li className='menubarli'><span>Project</span></li></Link>
                         <Link className='menubarlinks' to={'/contact'}><li className='menubarli'><span>Contact us</span></li></Link>
                       </ul>
@@ -269,6 +270,19 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
           </div>
 
        </div>
+
+         <div className="dot-loader">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div className="abouthomepage">
+          <AboutHome />
+        </div>
+
+
 
         <div className="dot-loader" >
           <span></span>

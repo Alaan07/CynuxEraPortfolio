@@ -1,0 +1,142 @@
+.menu {
+  opacity: 1;
+}
+.menu .menu__image {
+  -webkit-transform: translateX(100%);
+     -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.menu .controls__leftline,
+.menu .menulinks__contact,
+.menu .menudata__copyright {
+  opacity: 1;
+}
+
+.menu .navigation li a {
+  -webkit-transform: translateY(100%);
+     -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+}
+.menu.animate-in {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu.animate-in .menu__image {
+  -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.6s 0s;
+  transition: -webkit-transform 0.6s 0s;
+  -o-transition: transform 0.6s 0s;
+  -moz-transition: transform 0.6s 0s, -moz-transform 0.6s 0s;
+  transition: transform 0.6s 0s;
+  transition: transform 0.6s 0s, -webkit-transform 0.6s 0s, -moz-transform 0.6s 0s;
+}
+
+.menu.animate-in .navigation li a {
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0s;
+  transition: background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0s;
+  -o-transition: transform 0.6s 0s, background-position 0.3s 0s ease-in-out;
+  -moz-transition: transform 0.6s 0s, background-position 0.3s 0s ease-in-out, -moz-transform 0.6s 0s;
+  transition: transform 0.6s 0s, background-position 0.3s 0s ease-in-out;
+  transition: transform 0.6s 0s, background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0s, -moz-transform 0.6s 0s;
+}
+.menu.animate-in .navigation li:nth-of-type(2) a {
+  -webkit-transition: background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0.1s;
+  transition: background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0.1s;
+  -o-transition: transform 0.6s 0.1s, background-position 0.3s 0s ease-in-out;
+  -moz-transition: transform 0.6s 0.1s, background-position 0.3s 0s ease-in-out, -moz-transform 0.6s 0.1s;
+  transition: transform 0.6s 0.1s, background-position 0.3s 0s ease-in-out;
+  transition: transform 0.6s 0.1s, background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0.1s, -moz-transform 0.6s 0.1s;
+}
+.menu.animate-in .navigation li:nth-of-type(3) a {
+  -webkit-transition: background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0.2s;
+  transition: background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0.2s;
+  -o-transition: transform 0.6s 0.2s, background-position 0.3s 0s ease-in-out;
+  -moz-transition: transform 0.6s 0.2s, background-position 0.3s 0s ease-in-out, -moz-transform 0.6s 0.2s;
+  transition: transform 0.6s 0.2s, background-position 0.3s 0s ease-in-out;
+  transition: transform 0.6s 0.2s, background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0.2s, -moz-transform 0.6s 0.2s;
+}
+.menu.animate-in .navigation li:nth-of-type(4) a {
+  -webkit-transition: background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0.3s;
+  transition: background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0.3s;
+  -o-transition: transform 0.6s 0.3s, background-position 0.3s 0s ease-in-out;
+  -moz-transition: transform 0.6s 0.3s, background-position 0.3s 0s ease-in-out, -moz-transform 0.6s 0.3s;
+  transition: transform 0.6s 0.3s, background-position 0.3s 0s ease-in-out;
+  transition: transform 0.6s 0.3s, background-position 0.3s 0s ease-in-out, -webkit-transform 0.6s 0.3s, -moz-transform 0.6s 0.3s;
+}
+.menu.animate-in .menulinks__contact {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s 0.6s ease-in-out;
+  -o-transition: opacity 0.8s 0.6s ease-in-out;
+  -moz-transition: opacity 0.8s 0.6s ease-in-out;
+  transition: opacity 0.8s 0.6s ease-in-out;
+}
+.menu.animate-in .controls__leftline,
+.menu.animate-in .menudata__copyright {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s 0.8s ease-in-out;
+  -o-transition: opacity 0.8s 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s 0.8s ease-in-out;
+  transition: opacity 0.8s 0.8s ease-in-out;
+}
+.menu.animate-out {
+  -webkit-transform: translateX(100%);
+     -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.8s 0s;
+  transition: -webkit-transform 0.8s 0s;
+  -o-transition: transform 0.8s 0s;
+  -moz-transition: transform 0.8s 0s, -moz-transform 0.8s 0s;
+  transition: transform 0.8s 0s;
+  transition: transform 0.8s 0s, -webkit-transform 0.8s 0s, -moz-transform 0.8s 0s;
+}
+.menu.animate-out .menudata__controls,
+.menu.animate-out .navigation,
+.menu.animate-out .menulinks__contact,
+.menu.animate-out .menudata__copyright {
+  opacity: 0;
+  -webkit-transform: translateX(100px);
+     -moz-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+          transform: translateX(100px);
+  -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+  transition: opacity 0.6s, -webkit-transform 0.6s;
+  -o-transition: opacity 0.6s, transform 0.6s;
+  -moz-transition: opacity 0.6s, transform 0.6s, -moz-transform 0.6s;
+  transition: opacity 0.6s, transform 0.6s;
+  transition: opacity 0.6s, transform 0.6s, -webkit-transform 0.6s, -moz-transform 0.6s;
+}
+.menu.animate-out .menu__image {
+  -webkit-transform: translateX(100%);
+     -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.6s 0.6s;
+  transition: -webkit-transform 0.6s 0.6s;
+  -o-transition: transform 0.6s 0.6s;
+  -moz-transition: transform 0.6s 0.6s, -moz-transform 0.6s 0.6s;
+  transition: transform 0.6s 0.6s;
+  transition: transform 0.6s 0.6s, -webkit-transform 0.6s 0.6s, -moz-transform 0.6s 0.6s;
+}
+@media only screen and (min-width: 1200px) {
+  .menu.animate-out {
+    -webkit-transform: translateX(66.66666667%);
+       -moz-transform: translateX(66.66666667%);
+        -ms-transform: translateX(66.66666667%);
+            transform: translateX(66.66666667%);
+  }
+}

@@ -1,0 +1,301 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.about-section {
+  padding: 4rem 1rem;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0e0d26;
+}
+
+/* --- LAYOUT --- */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  gap: 2rem;
+}
+
+.about-content {
+  flex: 1 1 100%;
+}
+
+.about-image {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+}
+
+/* --- TERMINAL BLOCK --- */
+.terminal-body {
+  background-color: #bfb7c8;
+  padding: 1.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  height: 260px;
+  overflow-y: auto;
+}
+
+.mac-buttons span {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.close { background-color: #ff5f56; }
+.minimize { background-color: #ffbd2e; }
+.maximize { background-color: #27c93f; }
+
+.blinking-cursor {
+  animation: blink 1s step-start infinite;
+  color: #0f0;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Shared Card Style */
+.cardabout, .cert-card {
+  background: linear-gradient(180deg, #1f1f2b 0%, #2b2b3a 100%);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cardabout img,
+.cert-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.team-block , .certifications-block{
+    padding: 120px;
+    margin: 50px;
+    margin-bottom: -50px;
+}
+
+.skills-block{
+    margin: 100px;
+    margin-bottom: -50px;
+}
+
+.visionaries-block{
+    margin: 100px;
+    margin-bottom: -50px;
+}
+
+.cardabout:hover,
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+}
+
+.card-body h4,
+.card-body h5,
+.cert-card h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.card-body span,
+.cert-card span {
+  display: block;
+  font-size: 0.9rem;
+  color: #d946ef; /* Purple accent */
+  margin-bottom: 0.3rem;
+}
+
+.card-body p,
+.cert-card p {
+  font-size: 15px;
+  color: #d1d5db;
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+
+/* Section Subtitles */
+.feature__subtitle {
+  display: block;
+  color: #e879f9;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Grids */
+.visionary-grid,
+.team-grid,
+.certification-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1.5rem;
+}
+
+/* Certification Button */
+.cert-card button {
+  background: #7e22ce;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+
+.cert-card button:hover {
+  background: #7e22ce;
+}
+
+
+/* --- GRIDS --- */
+.visionary-grid, .team-grid, .certification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* --- SKILLBARS --- */
+.show-skillbar {
+  display: block;
+  padding: 0;
+  margin-bottom: 4rem;
+}
+
+.skillbar {
+  margin-bottom: 1rem;
+}
+
+.skillbar-bar {
+  height: 10px;
+  background: #6a47af;
+  border-radius: 5px;
+}
+
+.skillbar-percent {
+  float: right;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #6a47af;
+}
+
+/* --- CERTIFICATIONS --- */
+.cert-card {
+background: linear-gradient(180deg, #1f1f2b 0%, #2b2b3a 100%);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.cert-card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.cert-card h5 {
+  margin: 0.5rem 0;
+}
+
+.cert-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.cert-card button:hover {
+  background: #7e22ce;
+}
+
+/* --- HEADINGS --- */
+.visionaries-block h3,
+.team-block h3,
+.skills-block h3,
+.certifications-block h3 {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  color: #343a40;
+  text-align: center;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 768px) {
+  .about-content {
+    flex: 1 1 65%;
+  }
+  .about-image {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-block, .certifications-block, .visionaries-block, .team-block{
+    padding: 0;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .feature__subtitle{
+    margin-top: 50px;
+  }
+
+}
+
+.terminal-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  z-index: 10;
+  color: #00ff9d;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  height: 40px;
+  background-color: #290938;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  border: 1px solid #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

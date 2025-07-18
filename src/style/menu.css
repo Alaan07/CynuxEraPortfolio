@@ -1,0 +1,276 @@
+/* ------------------------------------------------*/
+/* Menu Start */
+/* ------------------------------------------------*/
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: transparent;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+     -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  z-index: 10;
+}
+
+.menu__content {
+  position: relative;
+}
+@media only screen and (min-width: 1200px) {
+  .menu__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.menu__data {
+  position: relative;
+  background-color: #07051c;
+}
+@media only screen and (min-width: 1200px) {
+  .menu__data {
+    height: 100%;
+  }
+}
+
+.menudata__controls {
+  position: relative;
+  width: 100%;
+  padding: 3rem 0;
+}
+@media only screen and (min-width: 768px) {
+  .menudata__controls {
+    padding: 5rem 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .menudata__controls {
+    padding: 6rem 0;
+  }
+}
+
+.controls__content {
+  position: relative;
+  padding: 0 10%;
+}
+@media only screen and (min-width: 1200px) {
+  .controls__content {
+    padding: 0 8rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .controls__content {
+    padding: 0 10rem;
+  }
+}
+
+.menudata__links {
+  position: relative;
+  width: 100%;
+  padding: 0 10%;
+}
+@media only screen and (min-width: 1200px) {
+  .menudata__links {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    padding: 0 8rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .menudata__links {
+    padding: 0 10rem;
+  }
+}
+
+.navigation {
+  position: relative;
+  padding: 6rem 0;
+}
+@media only screen and (max-width: 1200px) {
+  .navigation {
+    padding: 0;
+  }
+}
+
+.menulinks__contact {
+  display: block;
+  text-align: left;
+  padding-top: 3rem;
+}
+.menulinks__contact li {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 104rem;
+}
+.menulinks__contact li p, .menulinks__contact li a {
+  font-size: 1.4rem;
+  color: #9ca8b4;
+}
+@media only screen and (min-width: 768px) {
+  .menulinks__contact {
+    padding: 6rem 0;
+    text-align: right;
+  }
+  .menulinks__contact li:last-of-type {
+    margin-bottom: 0.2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .menulinks__contact {
+    padding: 0;
+  }
+}
+
+.menudata__copyright {
+  position: relative;
+  padding: 0 10%;
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 768px) {
+  .menudata__copyright {
+    margin: 5rem 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .menudata__copyright {
+    position: absolute;
+    bottom: 5rem;
+    left: 8rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .menudata__copyright {
+    bottom: 6rem;
+    left: 10rem;
+  }
+}
+
+.menu__media {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+}
+@media only screen and (min-width: 1200px) {
+  .menu__media {
+    height: 100%;
+    min-height: auto;
+  }
+}
+
+.media__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: cover;
+       background-size: cover;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+     -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.header {
+  opacity: 1;
+  -webkit-transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  -o-transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  -moz-transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+}
+.header.smaller {
+  padding: 1.8rem 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(64, 43, 105, 0.5);
+  -webkit-transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  -o-transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  -moz-transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+}
+.header.menu-is-visible {
+  opacity: 1;
+}
+.header.animate-in {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s 0.8s, padding 0.3s, background-color 0.3s, visibility 0.3s;
+  -o-transition: opacity 0.8s 0.8s, padding 0.3s, background-color 0.3s, visibility 0.3s;
+  -moz-transition: opacity 0.8s 0.8s, padding 0.3s, background-color 0.3s, visibility 0.3s;
+  transition: opacity 0.8s 0.8s, padding 0.3s, background-color 0.3s, visibility 0.3s;
+}
+.header.animate-out {
+  -webkit-transform: translateX(-100%);
+     -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.8s 0s;
+  transition: -webkit-transform 0.8s 0s;
+  -o-transition: transform 0.8s 0s;
+  -moz-transition: transform 0.8s 0s, -moz-transform 0.8s 0s;
+  transition: transform 0.8s 0s;
+  transition: transform 0.8s 0s, -webkit-transform 0.8s 0s, -moz-transform 0.8s 0s;
+}
+.header.animate-out .header__logo img,
+.header.animate-out .header__buttons {
+  opacity: 1;
+  -webkit-transform: translateX(-100px);
+     -moz-transform: translateX(-100px);
+      -ms-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+  transition: opacity 0.6s, -webkit-transform 0.6s;
+  -o-transition: opacity 0.6s, transform 0.6s;
+  -moz-transition: opacity 0.6s, transform 0.6s, -moz-transform 0.6s;
+  transition: opacity 0.6s, transform 0.6s;
+  transition: opacity 0.6s, transform 0.6s, -webkit-transform 0.6s, -moz-transform 0.6s;
+}
+.header.animate-out.smaller {
+  -webkit-transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s, -webkit-transform 0.8s 0s;
+  transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s, -webkit-transform 0.8s 0s;
+  -o-transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s, transform 0.8s 0s;
+  -moz-transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s, transform 0.8s 0s, -moz-transform 0.8s 0s;
+  transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s, transform 0.8s 0s;
+  transition: padding 0.3s, background-color 0.3s, opacity 0.3s, visibility 0.3s, transform 0.8s 0s, -webkit-transform 0.8s 0s, -moz-transform 0.8s 0s;
+}
+@media only screen and (min-width: 1200px) {
+  .header.smaller {
+    padding: 6rem 0;
+    background-color: transparent;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+  .header.animate-out {
+    -webkit-transform: translateX(-66.66666667%);
+       -moz-transform: translateX(-66.66666667%);
+        -ms-transform: translateX(-66.66666667%);
+            transform: translateX(-66.66666667%);
+  }
+}
+
+/* ------------------------------------------------*/
+/* Menu End */
+/* ------------------------------------------------*/

@@ -1,0 +1,283 @@
+.stacked-bg {
+  background-color: #07051c;
+  font-family: 'Fira Code', monospace;
+  width: 100%;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+.terminal-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  z-index: 10;
+  color: #00ff9d;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  height: 40px;
+  background-color: #290938;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  border: 1px solid #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.mac-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.mac-buttons span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  background-color: #ff5f56;
+}
+
+.minimize {
+  background-color: #ffbd2e;
+}
+
+.maximize {
+  background-color: #27c93f;
+}
+
+.terminal-body {
+  background-color: #bfb7c8;
+  padding: 1.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  height: 260px;
+  overflow-y: auto;
+}
+
+.terminal-line {
+  color: #c32e84;
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+  white-space: pre-wrap;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.terminal-prompt {
+  color: #b03070;
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.typed-content {
+  color: #c32e84;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Stronger glow for terminal text */
+.terminal-container:hover .terminal-line .terminal-prompt,
+.terminal-container:hover .terminal-line .typed-content {
+  text-shadow: 0 0 8px #8475ba, 0 0 15px #8475ba, 0 0 21px #8475ba;
+}
+
+/* Softer glow for the ABOUT US tab title */
+.terminal-container:hover .tab-title {
+  text-shadow: 0 0 2px #8475ba, 0 0 4px #8475ba;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #b399ff;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .terminal-body {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+.cert-card {
+  background-color: #1b103a;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  text-align: center;
+  padding: 2rem 1.2rem 1.8rem;
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+}
+
+.cert-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cert-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.cert-desc {
+  font-size: 0.95rem;
+  color: #ffffff;
+  flex-grow: 1;
+}
+
+.cert-btn {
+  margin-top: 1rem;
+  background-color: #2b7a78;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cert-btn:hover {
+  background-color: #205e5c;
+}
+
+/* Responsive padding */
+@media (max-width: 768px) {
+  .cert-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.about-section {
+  padding: 2rem;
+  width: 100%;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.about-content {
+  flex: 1 1 65%;
+  padding-right: 2rem;
+}
+
+.about-image {
+  flex: 1 1 35%;
+  padding-left: 1rem;
+}
+
+.terminal-block,
+.visionaries-block,
+.team-block,
+.skills-block,
+.certifications-block {
+  margin-bottom: 2rem;
+}
+
+.visionary-grid,
+.team-grid,
+.certification-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card,
+.cert-card {
+  background: #f9f9f9;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: calc(33.333% - 1rem);
+}
+
+.card img,
+.cert-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.skillbar {
+  margin-bottom: 1rem;
+  background: #eee;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skillbar-bar {
+  height: 12px;
+  background-color: #007bff;
+}
+
+.skillbar-title {
+  font-weight: bold;
+}
+
+.skillbar-percent {
+  float: right;
+  font-size: 0.85rem;
+  margin-top: -20px;
+  margin-right: 5px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.about-wrapper {
+  display: block;
+  width: 100%;
+}

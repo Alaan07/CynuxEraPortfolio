@@ -1,0 +1,122 @@
+/* ------------------------------------------------*/
+/* Header Styles Start */
+/* ------------------------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 360px;
+  z-index: 9;
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 3rem 0;
+  background-color: transparent;
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 5rem 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .header {
+    padding: 6rem 0;
+  }
+}
+
+.header__content {
+  position: relative;
+  padding: 0 10%;
+}
+@media only screen and (min-width: 1200px) {
+  .header__content {
+    padding: 0;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: 0.4rem;
+}
+
+.header__logo img {
+  display: block;
+  max-width: 130px; /* mobile default */
+  height: auto;
+}
+
+/* Laptop/Desktop screens */
+@media only screen and (min-width: 992px) {
+  .header__logo {
+    left: 6rem;
+  }
+
+  .header__logo img {
+    max-width: 180px;
+  }
+}
+
+/* Large Desktop screens */
+@media only screen and (min-width: 1400px) {
+  .header__logo {
+    left: 8rem;
+  }
+
+  .header__logo img {
+    max-width: 200px;
+  }
+}
+
+
+.header__menu,
+.header__buttons {
+  position: relative;
+}
+@media only screen and (min-width: 1200px) {
+  .header__menu,
+.header__buttons {
+    padding: 0 8rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .header__menu,
+.header__buttons {
+    padding: 0 10rem;
+  }
+}
+
+.inner-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.4rem;
+  height: 4.4rem;
+}
+@media only screen and (min-width: 1200px) {
+  .inner-controls {
+    position: absolute;
+    top: 0;
+    right: 9rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .inner-controls {
+    position: absolute;
+    top: 0;
+    right: 10rem;
+  }
+}
+
+.about-close,
+.portfolio-close,
+.contact-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ------------------------------------------------*/
+/* Header Styles End */
+/* ------------------------------------------------*/

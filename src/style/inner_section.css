@@ -1,0 +1,127 @@
+/* ------------------------------------------------*/
+/* Inner Sections Start */
+/* ------------------------------------------------*/
+
+
+@media only screen and (min-width: 1200px) {
+  .inner {
+    overflow: hidden;
+  }
+}
+
+.inner__content {
+  position: relative;
+  padding-top: 104px;
+}
+@media only screen and (min-width: 768px) {
+  .inner__content {
+    padding-top: 144px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .inner__content {
+    height: 100%;
+    min-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .inner__content {
+    padding-top: 164px;
+  }
+}
+
+.desktop-shadow {
+  opacity: 0;
+  visibility: hidden;
+}
+@media only screen and (min-width: 1200px) {
+  .desktop-shadow {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: -moz-calc(66.66666667% - 5px);
+    width: calc(66.66666667% - 5px);
+    height: 144px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(14, 13, 38, 0.8)), to(rgba(14, 13, 38, 0)));
+    background: -moz-linear-gradient(top, rgba(14, 13, 38, 0.8) 30%, rgba(14, 13, 38, 0) 100%);
+    background: -o-linear-gradient(top, rgba(14, 13, 38, 0.8) 30%, rgba(14, 13, 38, 0) 100%);
+    background: linear-gradient(to bottom, rgba(14, 13, 38, 0.8) 30%, rgba(14, 13, 38, 0) 100%);
+    z-index: 2;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .desktop-shadow {
+    height: 164px;
+  }
+}
+
+.inner__blocks {
+  position: relative;
+  padding: 6rem 0;
+  z-index: 1;
+}
+
+.inner__container {
+  position: relative;
+  margin-bottom: 6rem;
+}
+.inner__container:last-of-type {
+  margin-bottom: 0;
+}
+
+.content-block {
+  position: relative;
+  padding: 0 10%;
+}
+.content-block.grid-block {
+  padding: 0 -moz-calc(10% - 1.5rem);
+  padding: 0 calc(10% - 1.5rem);
+}
+@media only screen and (min-width: 1200px) {
+  .content-block {
+    padding: 0 8rem;
+  }
+  .content-block.grid-block {
+    padding: 0 6.5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .content-block {
+    padding: 0 10rem;
+  }
+  .content-block.grid-block {
+    padding: 0 8.5rem;
+  }
+}
+
+.inner__media {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+}
+@media only screen and (min-width: 1200px) {
+  .inner__media {
+    height: 100%;
+    min-height: auto;
+  }
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: cover;
+       background-size: cover;
+}
+
+/* ------------------------------------------------*/
+/* Inner Sections End */
+/* ------------------------------------------------*/

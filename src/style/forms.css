@@ -1,0 +1,151 @@
+/* ------------------------------------------------*/
+/* Forms and Forms Reply Groups Start */
+/* ------------------------------------------------*/
+.form-container {
+  position: relative;
+}
+
+.form {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.form.is-hidden {
+  opacity: 0;
+}
+
+form {
+  position: relative;
+  width: 100%;
+}
+form input, form textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  padding: 1.3rem 1.6rem 1.2rem 1.6rem;
+  font: normal 400 1.4rem/1.6 "Poppins", sans-serif;
+  -webkit-transition: border 0.3s, background-color 0.3s ease-in-out;
+  -o-transition: border 0.3s, background-color 0.3s ease-in-out;
+  -moz-transition: border 0.3s, background-color 0.3s ease-in-out;
+  transition: border 0.3s, background-color 0.3s ease-in-out;
+}
+form input.margin-s, form textarea.margin-s {
+  margin: 0 0 0.6rem 0;
+}
+form input {
+  height: 5rem;
+  margin: 0 0 2.4rem 0;
+}
+form textarea {
+  height: 16rem;
+  resize: none;
+  margin: 0 0 2.4rem 0;
+}
+form input.margin-s, form textarea.margin-s {
+  margin: 0 0 0.6rem 0;
+}
+form .inputs-description {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.3rem;
+  padding: 0 0.2rem;
+  text-align: right;
+  font: normal 400 1.3rem/1.2 "Poppins", sans-serif;
+}
+@media only screen and (min-width: 1400px) {
+  form input {
+    height: 5rem;
+  }
+  form textarea {
+    height: 18rem;
+  }
+}
+
+.form-light ::-webkit-input-placeholder {
+  font-weight: 300;
+  color: #9ca8b4;
+}
+.form-light :-moz-placeholder {
+  font-weight: 300;
+  color: #9ca8b4;
+}
+.form-light ::-moz-placeholder {
+  font-weight: 300;
+  color: #9ca8b4;
+}
+.form-light :-ms-input-placeholder {
+  font-weight: 300;
+  color: #9ca8b4;
+}
+.form-light input:focus:required:invalid,
+.form-light textarea:focus:required:invalid {
+  color: #ffffff;
+}
+.form-light input:required:valid,
+.form-light textarea:required:valid {
+  color: #ffffff;
+}
+.form-light input, .form-light textarea {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+.form-light input:focus, .form-light textarea:focus {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #6a47af;
+}
+.form-light .inputs-description {
+  color: #9ca8b4;
+}
+
+.reply-group {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+     -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 300px;
+  padding: 0 15px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.reply-group.is-visible {
+  opacity: 1;
+}
+
+.reply-group__icon {
+  display: block;
+  margin: 0 auto 1.7rem;
+  font-size: 4rem;
+  color: #6a47af;
+}
+
+.reply-group__title {
+  font: normal 600 2rem/1.2 "Poppins", sans-serif;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.reply-group__text {
+  font: normal 300 1.4rem/1.6 "Poppins", sans-serif;
+  color: #b3bbc3;
+}
+
+/* ------------------------------------------------*/
+/* Forms and Forms Reply Groups End */
+/* ------------------------------------------------*/
