@@ -53,10 +53,12 @@ const AboutHomePage = () => {
             key={i}
             className={`aboutus-card slide ${i === index ? "active" : ""}`}
           >
-            <div className="aboutus-image">
+
+          <div className="aboutus-image">
               <img src={person.image} alt={person.role} />
             </div>
             <div className="aboutus-content">
+            
               <h2>{person.name}</h2>
               <span className="feature__subtitle">{person.role}</span>
               <span className="feature__subtitle">{person.subtitle}</span>

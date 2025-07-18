@@ -28,15 +28,15 @@ function footer() {
             <div className='footeraboutusdiv'>
               <h3 className='footeraboutusheading'> About us</h3>
                <ul>
-                <Link className='footerLink'><li>Mission</li></Link>
-                <Link className='footerLink'><li>Team</li></Link>
+                <Link className='footerLink' to={'/about'}><li>Mission</li></Link>
+                <Link className='footerLink' to={'/about'}><li>Team</li></Link>
                 <Link className='footerLink' to={'https://www.cynuxera.in/certificates'} target='_blank'><li>Certificates</li></Link>
                </ul>
             </div>
             <div className='footerSupportdiv'>
               <h3 className='footerSupportheading'> Support</h3>
                <ul>
-                <Link className='footerLink'><li>Conatct</li></Link>
+                <Link className='footerLink' to={'/contact'}><li>Conatct</li></Link>
                 <Link className='footerLink' to={'mailto:cynuxera@gmail.com'}><li>Mail us</li></Link>
                </ul>
             </div>

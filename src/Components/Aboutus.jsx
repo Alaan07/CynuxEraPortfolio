@@ -23,7 +23,7 @@ const terminalLines = [
   'Team Name: " C Y N U X E R A "',
   "Initializing team...",
   "Mission: Build modern, secure, scalable systems",
-  "Strengths: React | Node.js | Firebase | UI/UX | Tailwind | SQL | Docker | Cloud | AI",
+  "Strengths: | Ethical Hacking | Pen testing | Node.js | Firebase | Tailwind | React",
   "Culture: Curiosity, Consistency, Collaboration",
   "Motto: We don’t just build projects — we craft experiences.",
   "Status: READY 🚀",
