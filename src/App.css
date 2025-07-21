@@ -761,6 +761,7 @@ body {
   }
 
   .trustedBy .Trustheading{
+    margin-bottom: 10px;
      color: #b3bbc3;
      font-size: 1.2rem;
      text-align: center;
