@@ -2327,7 +2327,7 @@ color: #96539b;
     visibility: hidden !important;
   }
   .contact-right {
-    width: 85%;
+    width: 100%;
     padding: 20px;
     height: auto;
     align-items: center;
@@ -2362,7 +2362,7 @@ color: #96539b;
   }
 
   .contact-form button {
-    width: 105%;
+    width: 100%;
   }
 
 }
