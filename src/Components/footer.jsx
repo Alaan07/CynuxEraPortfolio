@@ -45,7 +45,7 @@ function footer() {
                <ul>
                 <Link className='footerLink' to={'https://www.cynuxera.in/'} target='_blank'><li>Official Website</li></Link>
                 <Link className='footerLink' to={'https://www.linkedin.com/company/cynux-era'} target='_blank'><li>Linked in</li></Link>
-                <Link className='footerLink' to={'https://www.instagram.com/cynux_era/'} target='_blank'><li>Instagram</li></Link>
+                <Link className='footerLink' to={'https://www.instagram.com/cynux_era_/'} target='_blank'><li>Instagram</li></Link>
                </ul>
             </div>
           </div>

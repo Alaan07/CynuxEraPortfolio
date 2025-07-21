@@ -126,16 +126,18 @@ function App() {
               </ul>
             </div>
 
-            <div className="menubarlistadd">
-              <div className=".fixed_width_text ">
-                AIC DSU 3rd Floor <br /> DSU Kudlu Gate Bangalore
-              </div>
-
-              <div>
-                {" "}
-                support@cynuxera.in <br /> <br /> +91 90652 54600
-              </div>
-            </div>
+           <div className='menubarlistadd'>
+           
+              <div className='.fixed_width_text '>
+                <Link to={'https://goo.gl/maps/xap5o3MZBuC6DFHz8'} target='https://goo.gl/maps/xap5o3MZBuC6DFHz8'><span>AIC DSU 3rd Floor <br /> DSU Kudlu Gate Bangalore</span></Link>
+                  </div>
+           
+                                     
+                <div> <Link to={'mailto:support@cynuxera.in?subject=Message%20from%20your%20site'}><span>support@cynuxera.in</span></Link>
+                 <br /> <br /> 
+                 <Link to={'tel:+919065254600'}><span>+91 90652 54600</span></Link></div>
+                               
+                </div>
 
             <div className="menuby">
               <h3 className="menubyh3">

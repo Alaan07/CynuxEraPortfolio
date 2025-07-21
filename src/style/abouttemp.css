@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +44,7 @@ section.about-section {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 1px solid #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   height: 260px;
   overflow-y: auto;
@@ -161,22 +160,6 @@ section.about-section {
 }
 
 /* Certification Button */
-.cert-card button {
-  background: #7e22ce;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.75rem;
-  cursor: pointer;
-  font-weight: 500;
-  margin-top: 1rem;
-  transition: background 0.3s ease;
-}
-
-
-.cert-card button:hover {
-  background: #7e22ce;
-}
 
 
 /* --- GRIDS --- */
@@ -285,25 +268,99 @@ section.about-section {
 
 }
 
-.terminal-container {
+/* Terminal base styling */
+#terminal {
+  background-color: #1b103a;
+  color: #00ffcc;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  height: 350px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.2) inset;
   position: relative;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  z-index: 10;
-  color: #00ff9d;
-  display: flex;
-  flex-direction: column;
+  scroll-behavior: smooth;
 }
 
-.terminal-header {
-  height: 40px;
-  background-color: #290938;
+/* Each terminal line */
+.terminal-line {
+  margin-bottom: 4px;
+  animation: glow-fade-in 0.5s ease-in;
+  white-space: pre-wrap;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding-left: 1rem;
-  border: 1px solid #ffffff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+}
+
+/* Prompt text styling */
+.terminal-prompt {
+  color: #7e22ce;
+  font-weight: bold;
+}
+
+/* Typed content (glow effect) */
+.typed-content {
+  color: #c32e84;
+  text-shadow: 0 0 8px #c32e84, 0 0 16px #c32e84;
+}
+
+/* Blinking cursor effect */
+.blinking-cursor {
+  animation: blink 1s step-start infinite;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Glow line animation */
+@keyframes glow-fade-in {
+  from {
+    opacity: 0;
+    text-shadow: none;
+  }
+  to {
+    opacity: 1;
+    text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc;
+  }
+}
+
+/* Cursor blink animation */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.buttons-cert {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Show button on hover */
+.cert-card:hover .buttons-cert {
+  display: block;
+}
+
+/* Optional: Style the button */
+.cert-button {
+  padding: 8px 16px;
+  background-color: #7e22ce;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.cert-button:hover {
+  background-color: #6a47af;
+}
+
+.aboutcourses{
+  text-align: center;
+  color: #d946ef;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
 }

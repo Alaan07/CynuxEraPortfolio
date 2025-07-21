@@ -149,6 +149,16 @@ body {
   color: #b3bbc3;
 }
 
+.menubarlistadd a{
+  text-decoration: none;
+  color: #b3bbc3;
+}
+
+.menubarlistadd a:hover{
+   color: #f987d6;
+  transition: color 0.3s ease;
+}
+
 .menuby{
   position: absolute;
   bottom: 15%;
@@ -934,6 +944,7 @@ position: relative;
   .prohomepageLeft {
     width: 100% !important;
   }
+  
   .menudivleft{
     display: none;
   }
@@ -944,7 +955,18 @@ position: relative;
 
 
 }
+@media (max-width: 1100px){
+  .procardsectionHome{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+  }
+}
 
+/* @media (max-width: 680px){
+  .procardsectionHome{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+    padding-left: 0 !important;
+  }
+} */
 
 @media (max-width: 900px) {
 
@@ -953,7 +975,8 @@ position: relative;
  }
 
   .procardsectionHome{
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    padding-left: 0 !important;
   }
   .modalHome{
     position: fixed;
@@ -2040,11 +2063,19 @@ position: relative;
   align-items: flex-start;
   color: #b3bbc3;
   font-size: 1.2rem;
+  gap: 20px;
 }
 
 .footerleftbottom h3{
   font-size: 1.8rem;
 }
+
+@media (max-width: 460px){
+  .footerleftbottom h3{
+  font-size: 1.4rem;
+}
+}
+
 
 .footerleftbottom ul li{
   list-style: none;
@@ -2072,8 +2103,15 @@ position: relative;
   left: 15%;
   color: #b3bbc3;
   font-size: 1rem;
-  
 }
+
+@media (max-width: 500px){
+  .footercopyright{
+  width: 40%;
+  font-size: 1rem;
+}
+}
+
 .footerbacktotop{
   display: flex;
   align-items: center;
