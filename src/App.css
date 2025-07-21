@@ -185,7 +185,7 @@ body {
   z-index: 30;
   width: 50px;
   position: absolute;
-  top: 50px;
+  top: 70px;
   right: 80px;
   background: transparent;
   border: 1px solid #fff;
@@ -781,6 +781,25 @@ body {
     border-radius: 5px;
     margin-right: 10px;
   }
+
+  .broderaitrustedimg{
+    width: 8rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 23px;
+  }
+ 
+  .technotrustedimg{
+    width: 8rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    padding-top: 25px;
+  }
+
   .revatrustedimg{
     width: 8rem;
     background-color: white;
@@ -789,9 +808,34 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 10px;
+    margin-right: 10px;
     border-radius: 5px;
   }
 
+  @media(max-width: 630px){
+    .technotrustedimg{
+      margin-left: 0px;
+      margin-right: 10px;
+    }
+  }
+
+   @media(max-width: 480px){
+    .broderaitrustedimg{
+      margin-left: 0;
+      margin-right: 10px;
+    }
+    .technotrustedimg{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  @media(max-width: 318px){
+    .technotrustedimg, .broderaitrustedimg, .revatrustedimg, .dsutrustedimg{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
 
 .homemainbodyleft {
   display: flex;
@@ -1139,7 +1183,7 @@ position: relative;
 
   .menucynuxlogodiv{
     top: 8%;
-    left: 10%;
+    left: 20%;
 }
  }
 /* 👇 Hide nav_right only on very small screens */

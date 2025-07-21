@@ -232,6 +232,8 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
                  <img src="/img/newEXP/dsu.png" alt="reva"  className='dsutrustedimg'/>
                  <img src="/img/newEXP/Reva_logo.jpeg" alt="jain" className='revatrustedimg' />
+                 <img src="/img/newEXP/broader ai.png" alt="broderai" className='broderaitrustedimg'/>
+                 <img src="/img/newEXP/technotut.png" alt="technotut" className='technotrustedimg'/>
                   
                   {/* if its not good then we change to side by side  */}
 

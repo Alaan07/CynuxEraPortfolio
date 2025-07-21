@@ -45,9 +45,10 @@ export default function ContactCard({ type }) {
             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "4px" }}>
 <div className="location-block" style={{ display: "flex", flexDirection: "column", gap: "6px", alignItems: "flex-start" }}>
  
-  <span className="location-line intensity-1">AIC DSU 3rd Floor</span>
-  <span className="location-line intensity-2">DSU Kudlu Gate</span>
-  <span className="location-line intensity-3">Bangalore</span>
+  <a href="https://goo.gl/maps/xap5o3MZBuC6DFHz8" target='https://goo.gl/maps/xap5o3MZBuC6DFHz8' className="location-line intensity-1"><span className="location-line intensity-1">AIC DSU 3rd Floor</span></a>
+  <a href="https://goo.gl/maps/xap5o3MZBuC6DFHz8" target='https://goo.gl/maps/xap5o3MZBuC6DFHz8' className="location-line intensity-2"><span className="location-line intensity-2">DSU Kudlu Gate</span></a>
+  <a href="https://goo.gl/maps/xap5o3MZBuC6DFHz8" target='https://goo.gl/maps/xap5o3MZBuC6DFHz8' className="location-line intensity-3"><span className="location-line intensity-3">Bangalore</span></a>
+
 </div>
 
 </div>
@@ -64,7 +65,7 @@ export default function ContactCard({ type }) {
           </div>
           <div className="card-title" style={{ fontWeight: 700, fontSize: "1rem", color: "#ffff", marginBottom: "8px" }}>Follow us</div>
          <a
-  href="https://www.instagram.com/cynux_era/"
+  href="https://www.instagram.com/cynux_era_/"
   target="_blank"
   rel="noopener noreferrer"
   className="social-link"
@@ -102,16 +103,11 @@ export default function ContactCard({ type }) {
          <a href="tel:+919065254600" className="social-link">
   <FaPhone  className="bullet-icon" /> +91 90652 54600
 </a>
-<a href="tel:+916362571328" className="social-link">
-  <FaPhone className="bullet-icon" /> +91 6362571328
-</a>
 
 <a href="mailto:support@cynuxera.in" className="social-link">
   <FaEnvelope className="bullet-icon" />  support@cynuxera.in
 </a>
-<a href="mailto:support@cynuxera.in" className="social-link">
-  <FaEnvelope className="bullet-icon" /> cynuxera@gmail.com
-</a>
+
 
         </div>
       )}
