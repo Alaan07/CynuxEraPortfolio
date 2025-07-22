@@ -80,7 +80,7 @@ function Projects() {
         <div className="proHomeheadsection">
           <div className='prohomepageLeft'>
             <h1 className="projecth1">Projects</h1>
-            <h2 className="projecth2">We are creating unique Web Design. Meet our featured projects.</h2>
+            <h2 className="projecth2">Where sleek design meets rock-solid security. Explore our standout web and cybersecurity solutions</h2>
             <p className="projectdesc">
               {/* Be what you would seem to be – or, if you’d like it put more simply – never imagine yourself not to be otherwise than what it might appear to others that what you were or <Link to="/" className='prolicktohome' id='#HomeTag'>might have been</Link> was not otherwise than what you had been would have appeared to them to be otherwise. */}
 
