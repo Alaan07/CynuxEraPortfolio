@@ -118,12 +118,12 @@ function Projects() {
 
 
               <div className="card view-more-card">
-                <a href="/projects" className="view-more-link">
+                <Link to={'/projects'} className="view-more-link">
                   <div className="veiwmorecardcontant">
                     <h3>View More</h3>
                     <p>Explore all our projects</p>
                   </div>
-                </a>
+                </Link>
               </div>
 
 
