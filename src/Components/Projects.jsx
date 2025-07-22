@@ -245,7 +245,7 @@ function Projects() {
           <div className="proheadsection">
             <h1 className="projecth1">Projects</h1>
             <h2 className="projecth2">
-              We are creating unique Web Design. Meet our featured projects.
+              Where sleek design meets rock-solid security. Explore our standout web and cybersecurity solutions
             </h2>
             <p className="projectdesc">
               Be what you would seem to be – or, if you’d like it put more
