@@ -274,7 +274,7 @@ section.about-section {
   color: #00ffcc;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
-  height: 350px;
+  height: 320px;
   overflow-y: auto;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 255, 204, 0.2) inset;
@@ -298,12 +298,14 @@ section.about-section {
 .terminal-prompt {
   color: #7e22ce;
   font-weight: bold;
+  padding-top: 15px;
 }
 
 /* Typed content (glow effect) */
 .typed-content {
   color: #c32e84;
   text-shadow: 0 0 8px #c32e84, 0 0 16px #c32e84;
+  padding-top: 15px;
 }
 
 /* Blinking cursor effect */
