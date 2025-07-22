@@ -1501,7 +1501,7 @@ position: relative;
 }
 
 .close-btn:hover {
-  background: #c0392b;
+  background: transparent;
 }
 
 @media (max-width: 768px) {
@@ -1765,7 +1765,7 @@ position: relative;
 }
 
 .close-btn:hover {
-  box-shadow: 0 4px 8px 5px rgb(161, 107, 172), 0 -4px 8px 5px rgb(161, 107, 172); /* ✅ glow on hover */
+  color: rgb(161, 107, 172);
 }
 
 @media (max-width: 768px) {
@@ -1872,7 +1872,7 @@ position: relative;
 }
 
 .close-btn:hover {
-  background: #666;
+  background: transparent;
 }
 
 
