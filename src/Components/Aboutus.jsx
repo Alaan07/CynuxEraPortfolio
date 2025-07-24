@@ -361,7 +361,7 @@ const Aboutus = () => {
             <div className='menubarlistadd'>
             
                <div className='.fixed_width_text '>
-                <Link to={'https://goo.gl/maps/xap5o3MZBuC6DFHz8'} target='https://goo.gl/maps/xap5o3MZBuC6DFHz8'><span>AIC DSU 3rd Floor <br /> DSU Kudlu Gate Bangalore</span></Link>
+                <Link to={'https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8'} target='https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8'><span>AIC DSU 3rd Floor <br /> DSU Kudlu Gate Bangalore - 560068</span></Link>
                 </div>
             
                                       

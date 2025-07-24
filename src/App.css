@@ -762,7 +762,8 @@ body {
 .homecontainer {
   display: flex;
   flex-direction: column;
-  text-align: center; 
+  align-items: center; 
+  justify-content: center;
 }
 
 .forphoneviewimgdiv{
@@ -771,6 +772,14 @@ body {
 
  .trustedBy{
     margin-top: 2rem;
+    width: 70%;
+    align-items: center;
+  }
+  .trustbyimgdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .trustedBy .Trustheading{
@@ -778,6 +787,14 @@ body {
      color: #b3bbc3;
      font-size: 1.2rem;
      text-align: center;
+  }
+  .Ectrustedimg{
+    width: 8rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+    padding-top: 20px;
   }
   .dsutrustedimg{
     width: 8rem;
@@ -817,7 +834,14 @@ body {
     border-radius: 5px;
   }
 
-  @media(max-width: 630px){
+  @media(max-width: 580px){
+    .trustimg{
+      width: 40%;
+      margin: 5px 5px
+    }
+  }
+
+  /* @media(max-width: 630px){
     .technotrustedimg{
       margin-left: 0px;
       margin-right: 10px;
@@ -840,7 +864,7 @@ body {
       margin-left: 0px;
       margin-right: 0px;
     }
-  }
+  } */
 
 .homemainbodyleft {
   display: flex;
@@ -1076,6 +1100,7 @@ position: relative;
   .homecontainer {
     text-align: center;
     max-width: 90%;
+    margin-top: 3rem;
   }
 
   .HomeSubHeading h2 {
@@ -2104,6 +2129,7 @@ position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   gap: 20px;
   width: 40%;
 }
@@ -2154,7 +2180,7 @@ position: relative;
 
 .footersymboleImg{
   width: 60%;
-  margin-left: 3rem;
+  
 }
 .footerleftcynuxEraImg{
   width: 40%;
@@ -2196,6 +2222,7 @@ color: #96539b;
 .footeraddress{
   font-size: 1.2rem;
   color: #b3bbc3;
+  
 }
 
 .footerLink{

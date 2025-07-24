@@ -12,7 +12,7 @@ function footer() {
           </div>
           <div className='footeraddress'>
             <p>
-               AIC DSU 3rd Floor DSU Kudlu Gate Bangalore
+               AIC DSU 3rd Floor DSU Kudlu Gate <br />Bangalore - 560068
             </p>
           </div>
         </div>

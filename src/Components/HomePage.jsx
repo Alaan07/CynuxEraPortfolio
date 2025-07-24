@@ -155,7 +155,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                   <div className='menubarlistadd'>
 
                     <div className='.fixed_width_text '>
-                    <Link to={'https://goo.gl/maps/xap5o3MZBuC6DFHz8'} target='https://goo.gl/maps/xap5o3MZBuC6DFHz8'><span>AIC DSU 3rd Floor <br /> DSU Kudlu Gate Bangalore</span></Link>
+                    <Link to={'https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8'} target='https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8'><span>AIC DSU 3rd Floor <br /> DSU Kudlu Gate Bangalore - 560068</span></Link>
                     </div>
 
                           
@@ -229,11 +229,18 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
                 <div className="trustedBy">
                   <h3 className='Trustheading'>Trusted by ...</h3>
-
-                 <img src="/img/newEXP/dsu.png" alt="reva"  className='dsutrustedimg'/>
-                 <img src="/img/newEXP/Reva_logo.jpeg" alt="jain" className='revatrustedimg' />
-                 <img src="/img/newEXP/broader ai.png" alt="broderai" className='broderaitrustedimg'/>
-                 <img src="/img/newEXP/technotut.png" alt="technotut" className='technotrustedimg'/>
+                  <div className="trustbyimgdiv">
+                      <div className='trustdiv1'>
+                        <img src="/img/newEXP/Ec_Council_Logo.png" alt="Eccounsil"  className='Ectrustedimg trustimg'/>
+                        <img src="/img/newEXP/dsu.png" alt="reva"  className='dsutrustedimg trustimg'/>
+                        <img src="/img/newEXP/Reva_logo.jpeg" alt="jain" className='revatrustedimg trustimg' />
+                     </div>
+                     <div className='trustdiv2'>
+                        <img src="/img/newEXP/broader ai.png" alt="broderai" className='broderaitrustedimg trustimg'/>
+                        <img src="/img/newEXP/technotut.png" alt="technotut" className='technotrustedimg trustimg'/>
+                     </div>
+                  </div>
+                 
                   
                   {/* if its not good then we change to side by side  */}
 

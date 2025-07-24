@@ -45,9 +45,9 @@ export default function ContactCard({ type }) {
             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "4px" }}>
 <div className="location-block" style={{ display: "flex", flexDirection: "column", gap: "6px", alignItems: "flex-start" }}>
  
-  <a href="https://goo.gl/maps/xap5o3MZBuC6DFHz8" target='https://goo.gl/maps/xap5o3MZBuC6DFHz8' className="location-line intensity-1"><span className="location-line intensity-1">AIC DSU 3rd Floor</span></a>
-  <a href="https://goo.gl/maps/xap5o3MZBuC6DFHz8" target='https://goo.gl/maps/xap5o3MZBuC6DFHz8' className="location-line intensity-2"><span className="location-line intensity-2">DSU Kudlu Gate</span></a>
-  <a href="https://goo.gl/maps/xap5o3MZBuC6DFHz8" target='https://goo.gl/maps/xap5o3MZBuC6DFHz8' className="location-line intensity-3"><span className="location-line intensity-3">Bangalore</span></a>
+  <a href="https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8" target='https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8' className="location-line intensity-1"><span className="location-line intensity-1">AIC DSU 3rd Floor</span></a>
+  <a href="https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8" target='https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8' className="location-line intensity-2"><span className="location-line intensity-2">DSU Kudlu Gate</span></a>
+  <a href="https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8" target='https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8' className="location-line intensity-3"><span className="location-line intensity-3">Bangalore</span></a>
 
 </div>
 
