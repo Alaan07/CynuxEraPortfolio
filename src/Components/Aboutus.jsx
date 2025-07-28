@@ -1,10 +1,10 @@
 // src/components/About.js
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaGlobe } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import {FaBars} from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import Footer from "./footer.jsx";
 import "../style/abouttemp.css";
 import "../style/skillbar.css";
@@ -29,29 +29,22 @@ const terminalLines = [
   "Status: READY 🚀",
 ];
 
-  
-
 const Aboutus = () => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   useEffect(() => {
-
     const handleScroll = () => {
-              if (window.scrollY > 0) {
-                setScrolled(true);
-              } else {
-                setScrolled(false);
-              }
-            };
-  
-               window.addEventListener("scroll", handleScroll);
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
-
+    window.addEventListener("scroll", handleScroll);
 
     const terminal = document.getElementById("terminal");
     let currentLine = 0;
@@ -99,7 +92,7 @@ const Aboutus = () => {
         typedLines[currentLine] += fullLine[currentChar];
         document.getElementById(`line-${currentLine}`).textContent =
           typedLines[currentLine];
-          terminal.scrollTop = terminal.scrollHeight;
+        terminal.scrollTop = terminal.scrollHeight;
         currentChar++;
         setTimeout(typeLine, 20);
       } else {
@@ -134,10 +127,8 @@ const Aboutus = () => {
     if (aboutSection) observer.observe(aboutSection);
 
     return () => {
-              window.removeEventListener("scroll", handleScroll);
-            };
-
-
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const visionaries = [
@@ -200,10 +191,15 @@ const Aboutus = () => {
     { title: "Cyber Security", percent: 96 },
     { title: "Web Development", percent: 92 },
     { title: "Machine Learning", percent: 90 },
-    { title: "Branding & Logo Design", percent: 80 }
+    { title: "Branding & Logo Design", percent: 80 },
   ];
 
   const certifications = [
+    {
+      title: "EC-Council",
+      desc: "EC-Council certifications validate cybersecurity skills in ethical hacking, and leadership to combat evolving threats.",
+      logo: "/img/newEXP/Ec_council.png",
+    },
     {
       title: "Adobe",
       desc: "The ACP certification validates skills in Adobe Creative Cloud...",
@@ -350,7 +346,7 @@ const Aboutus = () => {
                     <span>Project</span>
                   </li>
                 </Link>
-                <Link className="menubarlinks" to={'/contact'}>
+                <Link className="menubarlinks" to={"/contact"}>
                   <li className="menubarli">
                     <span>Contact us</span>
                   </li>
@@ -358,20 +354,26 @@ const Aboutus = () => {
               </ul>
             </div>
 
-            <div className='menubarlistadd'>
-            
-               <div className='.fixed_width_text '>
+            <div className="menubarlistadd">
+              <div className=".fixed_width_text ">
                 <Link to={'https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8'} target='https://maps.app.goo.gl/Z8vHEB5TjfrTSMdA8'><span>AIC DSU 3rd Floor <br /> DSU Kudlu Gate Bangalore - 560068</span></Link>
-                </div>
-            
-                                      
-                <div> <Link to={'mailto:support@cynuxera.in?subject=Message%20from%20your%20site'}><span>support@cynuxera.in</span></Link>
-                 <br /> <br /> 
-                <Link to={'tel:+919065254600'}><span>+91 90652 54600</span></Link></div>
-                                
               </div>
 
-              
+              <div>
+                <Link
+                  to={
+                    "mailto:support@cynuxera.in?subject=Message%20from%20your%20site"
+                  }
+                >
+                  <span>support@cynuxera.in</span>
+                </Link>
+                <br /> <br />
+                <Link to={"tel:+919065254600"}>
+                  <span>+91 90652 54600</span>
+                </Link>
+              </div>
+            </div>
+
             <div className="menuby">
               <h3 className="menubyh3">
                 {" "}
@@ -452,24 +454,33 @@ const Aboutus = () => {
             <h1 className="aboutcourses">Courses offered</h1>
             <span className="feature__subtitle">Certifications</span>
             <div className="certification-grid">
-              {certifications.map((cert, index) => (
-                <div className="cert-card" key={index}>
-                  <img src={cert.logo} alt={cert.title} />
-                  <h5>{cert.title}</h5>
-                  <p>{cert.desc}</p>
-                  <div className="buttons-cert">
-                    <button
-                      className="cert-button"
-                      onClick={() =>
-                        (window.location.href =
-                          "https://www.cynuxera.in/certificates")
-                      }
-                    >
-                      Explore
-                    </button>
+              {certifications.map((cert, index) => {
+                const isLast = index === certifications.length - 1;
+                const isOdd = certifications.length % 2 === 1;
+                return (
+                  <div
+                    className={`cert-card ${
+                      isOdd && isLast ? "center-last" : ""
+                    }`}
+                    key={index}
+                  >
+                    <img src={cert.logo} alt={cert.title} />
+                    <h5>{cert.title}</h5>
+                    <p>{cert.desc}</p>
+                    <div className="buttons-cert">
+                      <button
+                        className="cert-button"
+                        onClick={() =>
+                          (window.location.href =
+                            "https://www.cynuxera.in/certificates")
+                        }
+                      >
+                        Explore
+                      </button>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

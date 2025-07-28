@@ -231,7 +231,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                   <h3 className='Trustheading'>Trusted by ...</h3>
                   <div className="trustbyimgdiv">
                       <div className='trustdiv1'>
-                        <img src="/img/newEXP/Ec_Council_Logo.png" alt="Eccounsil"  className='Ectrustedimg trustimg'/>
+                        <img src="/img/newEXP/Ec_council_cp.png" alt="Eccounsil"  className='Ectrustedimg trustimg'/>
                         <img src="/img/newEXP/dsu.png" alt="reva"  className='dsutrustedimg trustimg'/>
                         <img src="/img/newEXP/Reva_logo.jpeg" alt="jain" className='revatrustedimg trustimg' />
                      </div>

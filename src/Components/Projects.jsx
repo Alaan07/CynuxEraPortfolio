@@ -96,7 +96,6 @@ function Projects() {
         <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
           <ul className="navbar_logo">
             <Link to={"/"}>
-              {" "}
               <img
                 className="navbarLogoImage"
                 src="/img/New_loader.png"

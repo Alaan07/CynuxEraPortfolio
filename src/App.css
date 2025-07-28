@@ -791,10 +791,8 @@ body {
   .Ectrustedimg{
     width: 8rem;
     background-color: white;
-    padding: 10px;
     border-radius: 5px;
     margin-right: 15px;
-    padding-top: 20px;
   }
   .dsutrustedimg{
     width: 8rem;
@@ -838,6 +836,11 @@ body {
     .trustimg{
       width: 40%;
       margin: 5px 5px
+    }
+  }
+  @media(max-width: 450px){
+    .Ectrustedimg{
+      padding-top: 4px;
     }
   }
 
@@ -2155,6 +2158,49 @@ position: relative;
 }
 
 @media (max-width: 460px){
+
+  .moblinksdiv{
+  display: flex !important;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+
+.moblinksdiv ul{
+  display: flex !important;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.moblinksdiv ul li{
+  font-size: 1.3rem !important;
+}
+
+.moblinksdiv ul li:hover{
+  color: #96539b;
+}
+
+
+.footerSocialsdiv{
+  display: none;
+}
+
+
+  .footerleftcynuxEraImgdiv{
+    justify-content: center;
+    align-items: center;
+    margin-left: 5.5rem;
+    width: 100%;
+  }
+  .footerleftbottom{
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
   .footerleftbottom h3{
   font-size: 1.3rem;
 }
@@ -2162,8 +2208,14 @@ position: relative;
 .footerleftbottom ul li{
   font-size: 1rem;
 }
+.backtotoptoggle{
+  display: none;
+}
 }
 
+.moblinksdiv{
+  display: none;
+}
 
 .footerleftbottom ul li{
   list-style: none;
@@ -2195,8 +2247,9 @@ position: relative;
 }
 
 @media (max-width: 500px){
+
   .footercopyright{
-  width: 40%;
+  width: 50%;
   font-size: 1rem;
 }
 }
